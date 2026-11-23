@@ -1,0 +1,144 @@
+{
+  "id": "bark-gate",
+  "url": "/gsh-playtest/g05/assets/models/encounters/m4-arena/bark-gate.glb",
+  "source": "tools/assets/encounters/m4-arena/gate.py",
+  "parameters": "assets-src/encounters/m4-arena/bark-gate.json",
+  "license": "Original G05 asset; project use",
+  "metersPerUnit": 1,
+  "upAxis": "+Y",
+  "forwardAxis": "-Z",
+  "origin": "base-center",
+  "heightMeters": 6.3433,
+  "bounds": {
+    "min": [
+      -3.6261,
+      0.0,
+      -1.2802
+    ],
+    "max": [
+      3.5282,
+      6.3433,
+      1.2288
+    ]
+  },
+  "triangles": 4823,
+  "collisionTriangles": 3060,
+  "drawCalls": 4,
+  "texturesEmbedded": true,
+  "placement": {
+    "anchor": "boss-portal",
+    "relativeTo": "portal_dais origin",
+    "position": [
+      0,
+      0.42,
+      2.7
+    ],
+    "yawRadians": 0,
+    "scale": 1
+  },
+  "scenes": {
+    "visual": 0,
+    "physics": 1
+  },
+  "nodes": {
+    "masonry": "gate_masonry",
+    "roots": "gate_roots",
+    "moss": "gate_moss",
+    "surface": "gate_surface"
+  },
+  "sockets": {
+    "threshold": {
+      "node": "gate_threshold",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    "headTop": {
+      "node": "head_top",
+      "position": [
+        0,
+        6.55,
+        0
+      ]
+    }
+  },
+  "portal": {
+    "surfaceMaterial": "gate_surface",
+    "surfaceNode": "gate_surface",
+    "states": {
+      "sealed": {
+        "color": "#8b201b",
+        "emissive": "#570b08",
+        "emissiveIntensity": 0.7
+      },
+      "open": {
+        "color": "#268ac4",
+        "emissive": "#196fc8",
+        "emissiveIntensity": 1.05
+      }
+    },
+    "passageBounds": {
+      "min": [
+        -1.7,
+        0,
+        -0.85
+      ],
+      "max": [
+        1.7,
+        3.35,
+        0.85
+      ]
+    },
+    "triggerBounds": {
+      "min": [
+        -1.55,
+        0,
+        -0.42
+      ],
+      "max": [
+        1.55,
+        3.2,
+        0.42
+      ]
+    },
+    "clearWidthMeters": 3.4,
+    "clearHeightMeters": 3.35,
+    "archCrownHeightMeters": 5.2,
+    "closedStateCollision": false,
+    "triggerEnabledWhen": "boss-defeated",
+    "note": "Passage and trigger are local to gate root. Load only Physics scene for solid masonry; membrane and roots are decorative. Use scene 0 for visible meshes. Clone gate_surface material per instance before state changes."
+  },
+  "textures": {
+    "baseColor": "/gsh-playtest/g05/assets/textures/m4-arena/bark-gate-color.png",
+    "occlusionRoughnessMetallic": "/gsh-playtest/g05/assets/textures/m4-arena/bark-gate-orm.png",
+    "veil": "/gsh-playtest/g05/assets/textures/m4-arena/bark-gate-veil.png"
+  },
+  "arena": {
+    "existingDais": "portal_dais",
+    "daisDiameterMeters": 12,
+    "daisStandingHeightMeters": 0.42,
+    "radiusMeters": 30,
+    "existingCoverAsset": "rock_cover_2m",
+    "coverHeightMeters": 2,
+    "coverOffsets": [
+      [
+        -22,
+        -17
+      ],
+      [
+        22,
+        -17
+      ],
+      [
+        -22,
+        17
+      ],
+      [
+        22,
+        17
+      ]
+    ]
+  }
+}

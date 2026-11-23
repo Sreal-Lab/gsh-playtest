@@ -1,0 +1,286 @@
+{
+ "group": "props",
+ "models": [
+  {
+   "id": "coral_red",
+   "group": "props",
+   "name": "珊瑚丛（红）",
+   "class": "prop",
+   "footprint": [
+    0.8,
+    0.8
+   ],
+   "tris": 174,
+   "size": [
+    0.529,
+    0.614,
+    0.592
+   ],
+   "parts": [
+    "body"
+   ],
+   "fx": [],
+   "materials": [
+    "sand_d",
+    "reef",
+    "coral",
+    "coral_l",
+    "coral_d"
+   ],
+   "teamShare": 0
+  },
+  {
+   "id": "coral_violet",
+   "group": "props",
+   "name": "珊瑚丛（紫）",
+   "class": "prop",
+   "footprint": [
+    0.8,
+    0.8
+   ],
+   "tris": 160,
+   "size": [
+    0.621,
+    0.567,
+    0.619
+   ],
+   "parts": [
+    "body"
+   ],
+   "fx": [],
+   "materials": [
+    "sand_d",
+    "reef_d",
+    "violet",
+    "violet_l",
+    "violet_d"
+   ],
+   "teamShare": 0
+  },
+  {
+   "id": "reef_rock_a",
+   "group": "props",
+   "name": "礁岩",
+   "class": "prop",
+   "footprint": [
+    1.6,
+    1.4
+   ],
+   "tris": 126,
+   "size": [
+    1.478,
+    0.81,
+    1.275
+   ],
+   "parts": [
+    "body"
+   ],
+   "fx": [],
+   "materials": [
+    "sand_d",
+    "reef",
+    "salt_d",
+    "reef_d",
+    "reef_l",
+    "salt"
+   ],
+   "teamShare": 0
+  },
+  {
+   "id": "reef_rock_b",
+   "group": "props",
+   "name": "礁脊",
+   "class": "prop",
+   "footprint": [
+    2,
+    1
+   ],
+   "tris": 144,
+   "size": [
+    1.856,
+    0.57,
+    0.947
+   ],
+   "parts": [
+    "body"
+   ],
+   "fx": [],
+   "materials": [
+    "sand_d",
+    "reef_d",
+    "reef",
+    "reef_l"
+   ],
+   "teamShare": 0
+  },
+  {
+   "id": "reef_rock_c",
+   "group": "props",
+   "name": "岩台",
+   "class": "prop",
+   "footprint": [
+    1.8,
+    1.6
+   ],
+   "tris": 158,
+   "size": [
+    1.55,
+    0.521,
+    1.349
+   ],
+   "parts": [
+    "body"
+   ],
+   "fx": [],
+   "materials": [
+    "sand_d",
+    "reef_d",
+    "reef",
+    "salt_d",
+    "reef_l"
+   ],
+   "teamShare": 0
+  },
+  {
+   "id": "ruin_column_a",
+   "group": "props",
+   "name": "沉城残柱",
+   "class": "prop",
+   "footprint": [
+    0.7,
+    0.7
+   ],
+   "tris": 162,
+   "size": [
+    0.768,
+    1.19,
+    0.707
+   ],
+   "parts": [
+    "body"
+   ],
+   "fx": [],
+   "materials": [
+    "sand_d",
+    "concrete_d",
+    "concrete_l",
+    "concrete",
+    "rust_d",
+    "salt_d"
+   ],
+   "teamShare": 0
+  },
+  {
+   "id": "ruin_column_b",
+   "group": "props",
+   "name": "断柱基座",
+   "class": "prop",
+   "footprint": [
+    0.8,
+    0.8
+   ],
+   "tris": 188,
+   "size": [
+    0.792,
+    1.104,
+    0.761
+   ],
+   "parts": [
+    "body"
+   ],
+   "fx": [],
+   "materials": [
+    "sand_d",
+    "concrete_d",
+    "concrete",
+    "concrete_l",
+    "rust_d"
+   ],
+   "teamShare": 0
+  },
+  {
+   "id": "ruin_column_c",
+   "group": "props",
+   "name": "倒卧残柱",
+   "class": "prop",
+   "footprint": [
+    1.1,
+    0.6
+   ],
+   "tris": 186,
+   "size": [
+    1.178,
+    0.387,
+    0.8
+   ],
+   "parts": [
+    "body"
+   ],
+   "fx": [],
+   "materials": [
+    "sand_d",
+    "concrete_l",
+    "concrete",
+    "concrete_d",
+    "salt_d"
+   ],
+   "teamShare": 0
+  },
+  {
+   "id": "shell_pile_a",
+   "group": "props",
+   "name": "贝壳堆",
+   "class": "prop",
+   "footprint": [
+    0.7,
+    0.7
+   ],
+   "tris": 196,
+   "size": [
+    0.554,
+    0.212,
+    0.547
+   ],
+   "parts": [
+    "body"
+   ],
+   "fx": [],
+   "materials": [
+    "sand_d",
+    "bone",
+    "bone_l",
+    "salt",
+    "bone_d",
+    "reef_l"
+   ],
+   "teamShare": 0
+  },
+  {
+   "id": "shell_pile_b",
+   "group": "props",
+   "name": "碎蚝壳堆",
+   "class": "prop",
+   "footprint": [
+    0.8,
+    0.7
+   ],
+   "tris": 184,
+   "size": [
+    0.615,
+    0.187,
+    0.615
+   ],
+   "parts": [
+    "body"
+   ],
+   "fx": [],
+   "materials": [
+    "sand_d",
+    "salt",
+    "bone",
+    "bone_d"
+   ],
+   "teamShare": 0
+  }
+ ]
+}

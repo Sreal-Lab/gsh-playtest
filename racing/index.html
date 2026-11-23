@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>汐光巡礼 · Tidelight Rally</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23FFF6E5' stroke='%23FF5A4E' stroke-width='4'/%3E%3Cpath d='M12 36q5-8 10 0t10 0t10 0t10 0' fill='none' stroke='%231FA7B8' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='22' r='7' fill='%23FFC93C'/%3E%3C/svg%3E" />
+    <style>html,body{background:#17324d;height:100%;margin:0;overflow:hidden}#loading{z-index:100;color:#17324d;background:radial-gradient(120% 90% at 50% 0,#fffaf0 0%,#fff1d6 55%,#ffe3ae 100%);flex-direction:column;justify-content:center;align-items:center;font-family:PingFang SC,Hiragino Sans GB,Microsoft YaHei,sans-serif;font-size:min(.8333vw,1.4815vh);transition:opacity .45s,transform .45s;display:flex;position:fixed;inset:0}#loading.is-done{opacity:0;pointer-events:none;transform:translateY(-1.5em)}#loading .ld-stamp{width:11em;height:11em;animation:2.4s ease-in-out infinite alternate ld-bob}@keyframes ld-bob{0%{transform:rotate(-7deg)translateY(0)}to{transform:rotate(5deg)translateY(-.6em)}}#loading h1{letter-spacing:.1em;margin:.5em 0 0;font-size:4.6em;font-weight:800}#loading h1 em{color:#ff5a4e;font-style:normal}#loading .ld-latin{letter-spacing:.5em;color:#1fa7b8;margin-top:.3em;font-size:1.5em;font-weight:700}#loading .ld-track{background:#17324d24;border-radius:.5em;width:30em;height:.9em;margin-top:3em;overflow:hidden}#loading-bar{transform-origin:0;background:repeating-linear-gradient(-45deg,#ff5a4e 0 1.2em,#ff7a66 1.2em 2.4em);border-radius:.5em;width:100%;height:100%;transition:transform .35s;transform:scaleX(.02)}#loading-label{letter-spacing:.16em;margin-top:1em;font-size:1.3em;font-weight:600}#loading-tip{color:#4a6079;letter-spacing:.04em;margin-top:2.6em;font-size:1.15em}#loading .ld-waves{width:100%;height:9em;position:absolute;bottom:0;left:0;right:0}#loading .ld-waves path{animation:6s ease-in-out infinite alternate ld-wave}#loading .ld-waves path:nth-child(2){animation-duration:8s;animation-direction:alternate-reverse}@keyframes ld-wave{0%{transform:translate(-40px)}to{transform:translate(40px)}}#loading.is-error #loading-bar{background:#4a6079}</style>
+    <script type="module" crossorigin src="./assets/main-A0eXUorX.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/math-CnTxl3Ym.js">
+    <link rel="modulepreload" crossorigin href="./assets/modules-D9nE9iTO.js">
+    <link rel="modulepreload" crossorigin href="./assets/banners-pmcSInNB.js">
+    <link rel="modulepreload" crossorigin href="./assets/placement-DXBCaeH3.js">
+    <link rel="modulepreload" crossorigin href="./assets/catalog-Dl_4BKxf.js">
+    <link rel="modulepreload" crossorigin href="./assets/parts-CFQ6qlZ0.js">
+    <link rel="modulepreload" crossorigin href="./assets/stock-Blb-7TOv.js">
+    <link rel="modulepreload" crossorigin href="./assets/jsxRuntime-rEQ1Ryvo.js">
+    <link rel="modulepreload" crossorigin href="./assets/slice-Ch_jpts3.js">
+    <link rel="stylesheet" crossorigin href="./assets/banners-by7VxrQI.css">
+    <link rel="stylesheet" crossorigin href="./assets/main-CTedmz8g.css">
+  </head>
+  <body>
+    <!-- 自下而上：画布 → 外壳背景 → 界面线 → 外壳页面（主菜单与占位页）→ 加载页 -->
+    <div id="stage"></div>
+    <div id="backdrop"></div>
+    <div id="ui"></div>
+    <div id="shell"></div>
+
+    <div id="loading" role="status" aria-live="polite">
+      <svg class="ld-stamp" viewBox="0 0 200 200" aria-hidden="true">
+        <circle cx="100" cy="100" r="94" fill="#FFF6E5" stroke="#FF5A4E" stroke-width="6" />
+        <circle cx="100" cy="100" r="82" fill="none" stroke="#FF5A4E" stroke-width="2.5" stroke-dasharray="4 6" />
+        <circle cx="100" cy="74" r="24" fill="#FFC93C" />
+        <path d="M40,112 q10,-13 20,0 t20,0 t20,0 t20,0 t20,0 t20,0" fill="none" stroke="#1FA7B8" stroke-width="7" stroke-linecap="round" />
+        <path d="M50,134 q8.5,-11 17,0 t17,0 t17,0 t17,0 t17,0 t17,0" fill="none" stroke="#5FD6B4" stroke-width="6" stroke-linecap="round" />
+      </svg>
+      <h1>汐光<em>巡礼</em></h1>
+      <div class="ld-latin">TIDELIGHT RALLY</div>
+      <div class="ld-track"><div id="loading-bar"></div></div>
+      <div id="loading-label">正在靠岸</div>
+      <div id="loading-tip"></div>
+      <svg class="ld-waves" viewBox="0 0 1920 144" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M-80,70 q60,-46 120,0 t120,0 t120,0 t120,0 t120,0 t120,0 t120,0 t120,0 t120,0 t120,0 t120,0 t120,0 t120,0 t120,0 t120,0 t120,0 t120,0 V144 H-80 Z" fill="#5FD6B4" opacity="0.55" />
+        <path d="M-80,96 q70,-40 140,0 t140,0 t140,0 t140,0 t140,0 t140,0 t140,0 t140,0 t140,0 t140,0 t140,0 t140,0 t140,0 t140,0 t140,0 V144 H-80 Z" fill="#1FA7B8" opacity="0.8" />
+      </svg>
+    </div>
+
+    <noscript>《汐光巡礼》需要启用 JavaScript。</noscript>
+  </body>
+</html>

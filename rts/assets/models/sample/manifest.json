@@ -1,0 +1,46 @@
+{
+ "group": "sample",
+ "models": [
+  {
+   "id": "panshi",
+   "group": "sample",
+   "name": "“磐石”坦克",
+   "class": "vehicle",
+   "footprint": [
+    1.2,
+    1.6
+   ],
+   "tris": 1150,
+   "size": [
+    1.14,
+    1.2,
+    1.899
+   ],
+   "parts": [
+    "body",
+    "spinSprocketL",
+    "spinSprocketR",
+    "turret",
+    "swayFlag",
+    "barrel"
+   ],
+   "fx": [
+    "fx_smoke_l",
+    "fx_smoke_r",
+    "fx_muzzle"
+   ],
+   "materials": [
+    "rust_d",
+    "concrete_d",
+    "concrete",
+    "team",
+    "reef",
+    "reef_d",
+    "rust",
+    "salt",
+    "concrete_l"
+   ],
+   "teamShare": 0.265
+  }
+ ]
+}

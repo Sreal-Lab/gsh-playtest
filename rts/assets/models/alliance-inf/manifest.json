@@ -1,0 +1,202 @@
+{
+ "group": "alliance-inf",
+ "models": [
+  {
+   "id": "a_u01",
+   "group": "alliance-inf",
+   "name": "堤卫步兵",
+   "class": "infantry",
+   "footprint": [
+    0.5,
+    0.5
+   ],
+   "tris": 480,
+   "size": [
+    0.474,
+    0.76,
+    0.766
+   ],
+   "parts": [
+    "body",
+    "swingL_legL",
+    "swingR_legR",
+    "swingR_armL",
+    "swingL_armR"
+   ],
+   "fx": [
+    "fx_muzzle"
+   ],
+   "materials": [
+    "rust",
+    "concrete",
+    "rust_d",
+    "team",
+    "sand_d",
+    "concrete_d",
+    "concrete_l",
+    "reef_d",
+    "reef"
+   ],
+   "teamShare": 0.253
+  },
+  {
+   "id": "a_u02",
+   "group": "alliance-inf",
+   "name": "破甲手",
+   "class": "infantry",
+   "footprint": [
+    0.5,
+    0.5
+   ],
+   "tris": 494,
+   "size": [
+    0.466,
+    0.809,
+    1.07
+   ],
+   "parts": [
+    "body",
+    "swingL_legL",
+    "swingR_legR",
+    "swingR_armL",
+    "swingL_armR"
+   ],
+   "fx": [
+    "fx_muzzle",
+    "fx_smoke_back"
+   ],
+   "materials": [
+    "concrete_d",
+    "concrete",
+    "rust_d",
+    "team",
+    "sand_d",
+    "reef_d",
+    "concrete_l",
+    "rust",
+    "reef"
+   ],
+   "teamShare": 0.302
+  },
+  {
+   "id": "a_u03",
+   "group": "alliance-inf",
+   "name": "测绘工兵",
+   "class": "infantry",
+   "footprint": [
+    0.5,
+    0.5
+   ],
+   "tris": 478,
+   "size": [
+    0.57,
+    1.04,
+    0.653
+   ],
+   "parts": [
+    "body",
+    "swingL_legL",
+    "swingR_legR",
+    "swingR_armL",
+    "swingL_armR",
+    "swayFlag"
+   ],
+   "fx": [
+    "fx_muzzle"
+   ],
+   "materials": [
+    "rust",
+    "concrete_l",
+    "reef",
+    "team",
+    "sand_d",
+    "rust_l",
+    "concrete_d",
+    "reef_d",
+    "salt"
+   ],
+   "teamShare": 0.27
+  },
+  {
+   "id": "a_u05",
+   "group": "alliance-inf",
+   "name": "工程车",
+   "class": "vehicle",
+   "footprint": [
+    0.8,
+    1.3
+   ],
+   "tris": 1188,
+   "size": [
+    0.75,
+    1.154,
+    1.44
+   ],
+   "parts": [
+    "body",
+    "spinWheelFL",
+    "spinWheelFR",
+    "spinWheelML",
+    "spinWheelMR",
+    "spinWheelRL",
+    "spinWheelRR",
+    "turret"
+   ],
+   "fx": [
+    "fx_smoke",
+    "fx_muzzle"
+   ],
+   "materials": [
+    "reef_d",
+    "concrete_l",
+    "team",
+    "rust",
+    "concrete",
+    "rust_d",
+    "rust_l",
+    "salt_d",
+    "concrete_d",
+    "salt"
+   ],
+   "teamShare": 0.28
+  },
+  {
+   "id": "a_u13",
+   "group": "alliance-inf",
+   "name": "“鹞灯”旋翼机",
+   "class": "air",
+   "footprint": [
+    2,
+    2.2
+   ],
+   "tris": 1156,
+   "size": [
+    1.979,
+    0.934,
+    2.23
+   ],
+   "parts": [
+    "body",
+    "spinRotor",
+    "spinTailRotor",
+    "turret",
+    "barrel"
+   ],
+   "fx": [
+    "fx_muzzle",
+    "fx_smoke"
+   ],
+   "materials": [
+    "concrete",
+    "reef_d",
+    "deep_d",
+    "team",
+    "concrete_d",
+    "rust_d",
+    "concrete_l",
+    "rust"
+   ],
+   "teamShare": 0.457
+  }
+ ]
+}

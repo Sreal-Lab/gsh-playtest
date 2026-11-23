@@ -1,0 +1,190 @@
+{
+  "assetId": "lil-bark",
+  "url": "/gsh-playtest/g05/assets/models/encounters/m4-arena/lil-bark.glb",
+  "heightMeters": 8,
+  "metersPerUnit": 1,
+  "upAxis": "+Y",
+  "forwardAxis": "-Z",
+  "origin": "sole-center",
+  "rootMotion": false,
+  "triangles": 5440,
+  "drawPrimitives": 3,
+  "skin": "rigid weighted bark with articulated root joints",
+  "sockets": {
+    "foot.L": {
+      "node": "foot_L",
+      "joint": "foot_bone_L",
+      "restModelPositionMeters": [
+        -1.03,
+        0.0,
+        -0.4
+      ],
+      "localPositionMeters": [
+        0.0,
+        -0.1805357395041678,
+        -0.14
+      ]
+    },
+    "foot.R": {
+      "node": "foot_R",
+      "joint": "foot_bone_R",
+      "restModelPositionMeters": [
+        1.03,
+        0.0,
+        -0.4
+      ],
+      "localPositionMeters": [
+        0.0,
+        -0.1805357395041678,
+        -0.14
+      ]
+    },
+    "branch_tip.L": {
+      "node": "branch_tip_L",
+      "joint": "forearm_L",
+      "restModelPositionMeters": [
+        -3.45,
+        3.2596730743808076,
+        -0.58
+      ],
+      "localPositionMeters": [
+        -1.0,
+        -0.40119053223148393,
+        -0.45999999999999996
+      ]
+    },
+    "seed_muzzle.L": {
+      "node": "seed_muzzle_L",
+      "joint": "forearm_L",
+      "restModelPositionMeters": [
+        -3.5,
+        3.3298814175213174,
+        -0.68
+      ],
+      "localPositionMeters": [
+        -1.0499999999999998,
+        -0.3309821890909741,
+        -0.56
+      ]
+    },
+    "branch_tip.R": {
+      "node": "branch_tip_R",
+      "joint": "forearm_R",
+      "restModelPositionMeters": [
+        3.45,
+        3.2596730743808076,
+        -0.58
+      ],
+      "localPositionMeters": [
+        1.0,
+        -0.40119053223148393,
+        -0.45999999999999996
+      ]
+    },
+    "seed_muzzle.R": {
+      "node": "seed_muzzle_R",
+      "joint": "forearm_R",
+      "restModelPositionMeters": [
+        3.5,
+        3.3298814175213174,
+        -0.68
+      ],
+      "localPositionMeters": [
+        1.0499999999999998,
+        -0.3309821890909741,
+        -0.56
+      ]
+    },
+    "head_top": {
+      "node": "head_top",
+      "joint": "head",
+      "restModelPositionMeters": [
+        0,
+        8.12,
+        0
+      ],
+      "localPositionMeters": [
+        0,
+        2.5033325487592233,
+        0
+      ]
+    },
+    "chest": {
+      "node": "chest",
+      "joint": "trunk",
+      "restModelPositionMeters": [
+        0,
+        4.162351771901647,
+        -0.72
+      ],
+      "localPositionMeters": [
+        0,
+        1.5546133123970005,
+        -0.72
+      ]
+    }
+  },
+  "clips": {
+    "loop": [
+      "idle",
+      "walk"
+    ],
+    "once": [
+      "emerge",
+      "seed_fan",
+      "stomp",
+      "stomp_double",
+      "summon_roots",
+      "phase_roar",
+      "hurt"
+    ],
+    "holdLastFrame": [
+      "death"
+    ]
+  },
+  "clipEventsSeconds": {
+    "emerge": {
+      "ready": 3
+    },
+    "seed_fan": {
+      "telegraphStart": 0,
+      "release": 0.6
+    },
+    "stomp": {
+      "impact": 1
+    },
+    "stomp_double": {
+      "impact": [
+        1,
+        1.6
+      ]
+    },
+    "summon_roots": {
+      "eruption": 1.2
+    },
+    "phase_roar": {
+      "phaseReady": 1.5
+    },
+    "death": {
+      "burst": 0.64,
+      "finished": 2.2
+    }
+  },
+  "textures": {
+    "color": "/gsh-playtest/g05/assets/textures/m4-arena/lil-bark-color.png",
+    "orm": "/gsh-playtest/g05/assets/textures/m4-arena/lil-bark-orm.png",
+    "normal": "/gsh-playtest/g05/assets/textures/m4-arena/lil-bark-normal.png"
+  },
+  "materials": {
+    "eyes": "Bark / green eyes",
+    "seedBuds": "Bark / red seed buds"
+  },
+  "integration": {
+    "placement": "Position sole at portal_dais support height (+0.42m from dais anchor), scale=1.",
+    "animation": "Use SkeletonUtils.clone; AnimationMixer clips use seconds. Trigger attack once; clamp death, then remove. Walk in-place at 2 m/s. Seek clips from simulation attack elapsed; no animation-driven damage.",
+    "frustumCulling": "Set SkinnedMesh.frustumCulled=false (one boss); emergence and death extend beyond bind bounds.",
+    "seedGlow": "Clone red seed-bud material per instance, ramp emissive from #190100 to #ff2408 during the 0.6s seed telegraph; reset afterward.",
+    "death": "Authored 24 animated wood splinters burst at 0.64s; no runtime particles required for basic death silhouette.",
+    "emerge": "Motion root rises from Y=-8.35 to 0 over exactly 3 seconds; gameplay entity stays at its final support height."
+  }
+}

@@ -1,0 +1,151 @@
+{
+ "group": "alliance-bld1",
+ "models": [
+  {
+   "id": "a_b01",
+   "group": "alliance-bld1",
+   "name": "指挥堡",
+   "class": "building",
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 2866,
+   "size": [
+    4,
+    3.96,
+    4
+   ],
+   "parts": [
+    "body",
+    "spinRadar",
+    "swayFlag",
+    "scaffoldFrame"
+   ],
+   "fx": [
+    "fx_smoke_l",
+    "fx_smoke_r"
+   ],
+   "materials": [
+    "concrete_d",
+    "concrete_l",
+    "concrete",
+    "team",
+    "rust_d",
+    "rust",
+    "reef_d",
+    "salt"
+   ],
+   "teamShare": 0.312
+  },
+  {
+   "id": "a_b02",
+   "group": "alliance-bld1",
+   "name": "发电站",
+   "class": "building",
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 2788,
+   "size": [
+    2,
+    2.67,
+    2
+   ],
+   "parts": [
+    "body",
+    "spinFan",
+    "scaffoldFrame"
+   ],
+   "fx": [
+    "fx_smoke_tower",
+    "fx_smoke"
+   ],
+   "materials": [
+    "concrete_d",
+    "concrete",
+    "team",
+    "concrete_l",
+    "reef_d",
+    "rust",
+    "rust_d",
+    "salt"
+   ],
+   "teamShare": 0.251
+  },
+  {
+   "id": "a_b03",
+   "group": "alliance-bld1",
+   "name": "屯兵舱",
+   "class": "building",
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 2436,
+   "size": [
+    2,
+    1.88,
+    2
+   ],
+   "parts": [
+    "body",
+    "spinFan",
+    "swayFlag",
+    "scaffoldFrame"
+   ],
+   "fx": [
+    "fx_smoke"
+   ],
+   "materials": [
+    "concrete_d",
+    "concrete",
+    "concrete_l",
+    "team",
+    "rust_d",
+    "rust",
+    "reef_d",
+    "salt"
+   ],
+   "teamShare": 0.272
+  },
+  {
+   "id": "a_b04",
+   "group": "alliance-bld1",
+   "name": "精炼厂",
+   "class": "building",
+   "footprint": [
+    4,
+    3
+   ],
+   "tris": 2906,
+   "size": [
+    4,
+    3.36,
+    3
+   ],
+   "parts": [
+    "body",
+    "spinCrane",
+    "scaffoldFrame"
+   ],
+   "fx": [
+    "fx_smoke_tank",
+    "fx_smoke",
+    "fx_smoke_flare"
+   ],
+   "materials": [
+    "concrete_d",
+    "concrete",
+    "concrete_l",
+    "team",
+    "rust",
+    "rust_d",
+    "reef_d",
+    "salt"
+   ],
+   "teamShare": 0.253
+  }
+ ]
+}

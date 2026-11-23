@@ -1,0 +1,202 @@
+{
+  "version": 1,
+  "metersPerUnit": 1,
+  "upAxis": "+Y",
+  "forwardAxis": "-Z",
+  "origin": "sole-center",
+  "rootMotion": false,
+  "texturesEmbedded": true,
+  "characters": {
+    "skeleton": {
+      "url": "/gsh-playtest/g05/assets/models/characters/m4-crowd/skeleton.glb",
+      "heightMeters": 1.431664,
+      "triangles": 1702,
+      "sockets": {
+        "head_top": "head_top",
+        "sword_tip": "sword_tip"
+      },
+      "socketRestPositions": {
+        "head_top": [
+          0.0,
+          1.441664,
+          -0.045
+        ],
+        "sword_tip": [
+          0.396,
+          1.216664,
+          -0.245
+        ]
+      },
+      "clips": {
+        "loop": [
+          "idle",
+          "run"
+        ],
+        "once": [
+          "windup",
+          "attack",
+          "hurt"
+        ],
+        "holdLastFrame": [
+          "death"
+        ]
+      },
+      "clipDurations": {
+        "idle": 2.0,
+        "run": 0.6666666667,
+        "windup": 0.5,
+        "attack": 0.5,
+        "hurt": 0.3333333333,
+        "death": 1.0
+      },
+      "textures": {
+        "baseColor": "/gsh-playtest/g05/assets/textures/m4-crowd/skeleton-color.png",
+        "occlusion": "/gsh-playtest/g05/assets/textures/m4-crowd/skeleton-ao.png",
+        "metallicRoughness": "/gsh-playtest/g05/assets/textures/m4-crowd/skeleton-surface.png"
+      },
+      "crowd": {
+        "fps": 24,
+        "mesh": "Skeleton | skin",
+        "headBone": "head",
+        "maxBoneInfluences": 4,
+        "draws": 1
+      },
+      "elite": {
+        "scale": 1.5,
+        "crownUrl": "/gsh-playtest/g05/assets/models/characters/m4-crowd/elite-crown.glb",
+        "socket": "head_top",
+        "crownScale": 1
+      },
+      "windupSeconds": 0.5,
+      "telegraphSocket": "sword_tip"
+    },
+    "shaman": {
+      "url": "/gsh-playtest/g05/assets/models/characters/m4-crowd/shaman.glb",
+      "heightMeters": 1.416,
+      "triangles": 1586,
+      "sockets": {
+        "head_top": "head_top",
+        "staff_tip": "staff_tip"
+      },
+      "socketRestPositions": {
+        "head_top": [
+          0.0,
+          1.157,
+          -0.119
+        ],
+        "staff_tip": [
+          0.461,
+          1.325,
+          -0.216
+        ]
+      },
+      "clips": {
+        "loop": [
+          "idle",
+          "run"
+        ],
+        "once": [
+          "windup",
+          "attack",
+          "hurt"
+        ],
+        "holdLastFrame": [
+          "death"
+        ]
+      },
+      "clipDurations": {
+        "idle": 2.5,
+        "run": 0.6666666667,
+        "windup": 0.8,
+        "attack": 0.5833333333,
+        "hurt": 0.3333333333,
+        "death": 1.1666666667
+      },
+      "textures": {
+        "baseColor": "/gsh-playtest/g05/assets/textures/m4-crowd/shaman-color.png",
+        "occlusion": "/gsh-playtest/g05/assets/textures/m4-crowd/shaman-ao.png",
+        "metallicRoughness": "/gsh-playtest/g05/assets/textures/m4-crowd/shaman-surface.png",
+        "emissive": "/gsh-playtest/g05/assets/textures/m4-crowd/shaman-ember.png"
+      },
+      "crowd": {
+        "fps": 24,
+        "mesh": "Shaman | skin",
+        "headBone": "head",
+        "maxBoneInfluences": 4,
+        "draws": 1
+      },
+      "elite": {
+        "scale": 1.5,
+        "crownUrl": "/gsh-playtest/g05/assets/models/characters/m4-crowd/elite-crown.glb",
+        "socket": "head_top",
+        "crownScale": 1.06
+      },
+      "windupSeconds": 0.8,
+      "telegraphSocket": "staff_tip"
+    },
+    "ghost": {
+      "url": "/gsh-playtest/g05/assets/models/characters/m4-crowd/ghost.glb",
+      "heightMeters": 1.547,
+      "triangles": 1050,
+      "sockets": {
+        "head_top": "head_top"
+      },
+      "socketRestPositions": {
+        "head_top": [
+          0.018,
+          1.547,
+          -0.015
+        ]
+      },
+      "clips": {
+        "loop": [
+          "idle",
+          "run"
+        ],
+        "once": [
+          "windup",
+          "attack",
+          "hurt"
+        ],
+        "holdLastFrame": [
+          "death"
+        ]
+      },
+      "clipDurations": {
+        "idle": 2.0,
+        "run": 1.0,
+        "windup": 0.375,
+        "attack": 0.5,
+        "hurt": 0.3333333333,
+        "death": 1.25
+      },
+      "textures": {
+        "baseColor": "/gsh-playtest/g05/assets/textures/m4-crowd/ghost-color.png",
+        "occlusion": "/gsh-playtest/g05/assets/textures/m4-crowd/ghost-ao.png",
+        "metallicRoughness": "/gsh-playtest/g05/assets/textures/m4-crowd/ghost-surface.png"
+      },
+      "crowd": {
+        "fps": 24,
+        "mesh": "Ghost | skin",
+        "headBone": "head",
+        "maxBoneInfluences": 4,
+        "draws": 1
+      },
+      "render": {
+        "transparent": false,
+        "alphaHash": true,
+        "depthWrite": true,
+        "opacity": 1,
+        "side": "FrontSide",
+        "emissiveIntensity": 1
+      }
+    }
+  },
+  "accessories": {
+    "elite-crown": {
+      "url": "/gsh-playtest/g05/assets/models/characters/m4-crowd/elite-crown.glb",
+      "triangles": 130,
+      "origin": "band-bottom-center"
+    }
+  }
+}

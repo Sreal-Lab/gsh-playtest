@@ -1,0 +1,588 @@
+{
+ "group": "alliance-bld2",
+ "models": [
+  {
+   "id": "a_b05",
+   "group": "alliance-bld2",
+   "name": "兵营",
+   "class": "building",
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 2922,
+   "size": [
+    3,
+    3.63,
+    3
+   ],
+   "parts": [
+    "body",
+    "swayBanner",
+    "swayFlag2",
+    "swayFlag",
+    "swayBell",
+    "scaffoldFrame",
+    "scaffoldPorch"
+   ],
+   "fx": [
+    "fx_smoke",
+    "fx_rally",
+    "fx_bell"
+   ],
+   "materials": [
+    "concrete_d",
+    "concrete",
+    "sand_l",
+    "team",
+    "rust",
+    "concrete_l",
+    "rust_d",
+    "reef_d",
+    "salt",
+    "rust_l",
+    "sand_d"
+   ],
+   "teamShare": 0.267
+  },
+  {
+   "id": "a_b06",
+   "group": "alliance-bld2",
+   "name": "车辆厂",
+   "class": "building",
+   "footprint": [
+    4,
+    3
+   ],
+   "tris": 2840,
+   "size": [
+    4,
+    3.38,
+    3.004
+   ],
+   "parts": [
+    "body",
+    "swayHook",
+    "swayFlag",
+    "scaffoldFrame",
+    "scaffoldDoor"
+   ],
+   "fx": [
+    "fx_smoke",
+    "fx_smoke2"
+   ],
+   "materials": [
+    "concrete_d",
+    "concrete",
+    "sand_l",
+    "team",
+    "rust",
+    "concrete_l",
+    "salt",
+    "rust_d",
+    "reef_d",
+    "rust_l"
+   ],
+   "teamShare": 0.258
+  },
+  {
+   "id": "a_b07",
+   "group": "alliance-bld2",
+   "name": "机枪碉堡",
+   "class": "building",
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 2421,
+   "size": [
+    2,
+    2.12,
+    2
+   ],
+   "parts": [
+    "body",
+    "turret",
+    "barrel",
+    "swayFlag",
+    "scaffoldFrame"
+   ],
+   "fx": [
+    "fx_smoke_turret",
+    "fx_muzzle",
+    "fx_muzzle_l",
+    "fx_muzzle_r"
+   ],
+   "materials": [
+    "concrete_d",
+    "concrete",
+    "concrete_l",
+    "reef_d",
+    "team",
+    "rust_d",
+    "rust",
+    "salt",
+    "sand_d"
+   ],
+   "teamShare": 0.329
+  },
+  {
+   "id": "a_b08",
+   "group": "alliance-bld2",
+   "name": "堤墙",
+   "class": "building",
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 378,
+   "size": [
+    1,
+    1.03,
+    0.67
+   ],
+   "parts": [
+    "body",
+    "scaffoldFrame"
+   ],
+   "fx": [
+    "fx_smoke"
+   ],
+   "materials": [
+    "concrete_d",
+    "team",
+    "concrete",
+    "concrete_l",
+    "reef_d",
+    "rust_d",
+    "rust"
+   ],
+   "teamShare": 0.286
+  },
+  {
+   "id": "a_b08_corner",
+   "group": "alliance-bld2",
+   "name": "堤墙（转角）",
+   "class": "building",
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 462,
+   "size": [
+    0.84,
+    1.26,
+    0.84
+   ],
+   "parts": [
+    "body",
+    "scaffoldFrame"
+   ],
+   "fx": [
+    "fx_smoke"
+   ],
+   "materials": [
+    "concrete_d",
+    "team",
+    "concrete",
+    "concrete_l",
+    "reef_d",
+    "rust_d",
+    "rust",
+    "salt"
+   ],
+   "teamShare": 0.392
+  },
+  {
+   "id": "a_b08_cross",
+   "group": "alliance-bld2",
+   "name": "堤墙（十字）",
+   "class": "building",
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 698,
+   "size": [
+    1,
+    1.26,
+    1
+   ],
+   "parts": [
+    "body",
+    "scaffoldFrame"
+   ],
+   "fx": [
+    "fx_smoke"
+   ],
+   "materials": [
+    "concrete_d",
+    "team",
+    "concrete",
+    "concrete_l",
+    "reef_d",
+    "rust_d",
+    "rust",
+    "salt"
+   ],
+   "teamShare": 0.4
+  },
+  {
+   "id": "a_b08_end",
+   "group": "alliance-bld2",
+   "name": "堤墙（端头）",
+   "class": "building",
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 344,
+   "size": [
+    0.84,
+    1.26,
+    0.69
+   ],
+   "parts": [
+    "body",
+    "scaffoldFrame"
+   ],
+   "fx": [
+    "fx_smoke"
+   ],
+   "materials": [
+    "concrete_d",
+    "team",
+    "concrete",
+    "concrete_l",
+    "reef_d",
+    "rust_d",
+    "rust",
+    "salt"
+   ],
+   "teamShare": 0.359
+  },
+  {
+   "id": "a_b08_post",
+   "group": "alliance-bld2",
+   "name": "堤墙（孤墩）",
+   "class": "building",
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 226,
+   "size": [
+    0.68,
+    1.26,
+    0.69
+   ],
+   "parts": [
+    "body",
+    "scaffoldFrame"
+   ],
+   "fx": [
+    "fx_smoke"
+   ],
+   "materials": [
+    "concrete_d",
+    "concrete",
+    "rust",
+    "concrete_l",
+    "team",
+    "rust_d",
+    "salt"
+   ],
+   "teamShare": 0.349
+  },
+  {
+   "id": "a_b08_tee",
+   "group": "alliance-bld2",
+   "name": "堤墙（丁字）",
+   "class": "building",
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 580,
+   "size": [
+    1,
+    1.26,
+    0.84
+   ],
+   "parts": [
+    "body",
+    "scaffoldFrame"
+   ],
+   "fx": [
+    "fx_smoke"
+   ],
+   "materials": [
+    "concrete_d",
+    "team",
+    "concrete",
+    "concrete_l",
+    "reef_d",
+    "rust_d",
+    "rust",
+    "salt"
+   ],
+   "teamShare": 0.393
+  },
+  {
+   "id": "a_b09",
+   "group": "alliance-bld2",
+   "name": "工程院",
+   "class": "building",
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 2810,
+   "size": [
+    3,
+    3.68,
+    3.058
+   ],
+   "parts": [
+    "body",
+    "spinCrane",
+    "swayHook",
+    "swayFlag",
+    "scaffoldFrame"
+   ],
+   "fx": [
+    "fx_smoke_chimney",
+    "fx_hoist",
+    "fx_smoke",
+    "fx_rally"
+   ],
+   "materials": [
+    "concrete_d",
+    "concrete",
+    "team",
+    "sand_l",
+    "rust_d",
+    "rust",
+    "concrete_l",
+    "deep_d",
+    "rust_l",
+    "reef_d",
+    "sand_d"
+   ],
+   "teamShare": 0.299
+  },
+  {
+   "id": "a_b11",
+   "group": "alliance-bld2",
+   "name": "防空阵地",
+   "class": "building",
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 2692,
+   "size": [
+    2,
+    1.48,
+    2
+   ],
+   "parts": [
+    "body",
+    "turret",
+    "barrel",
+    "spinRadar",
+    "swayFlag",
+    "scaffoldFrame"
+   ],
+   "fx": [
+    "fx_smoke_turret",
+    "fx_muzzle",
+    "fx_muzzle_l",
+    "fx_muzzle_r"
+   ],
+   "materials": [
+    "concrete_d",
+    "concrete",
+    "team",
+    "concrete_l",
+    "reef_d",
+    "sand_d",
+    "rust",
+    "rust_d",
+    "deep_d"
+   ],
+   "teamShare": 0.353
+  },
+  {
+   "id": "a_b13",
+   "group": "alliance-bld2",
+   "name": "泵闸站",
+   "class": "building",
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 2872,
+   "size": [
+    2.12,
+    2.61,
+    2.06
+   ],
+   "parts": [
+    "body",
+    "deployGate",
+    "spinWheel",
+    "spinFlywheel",
+    "swayFlag",
+    "scaffoldFrame"
+   ],
+   "fx": [
+    "fx_splash",
+    "fx_smoke"
+   ],
+   "materials": [
+    "concrete_d",
+    "concrete",
+    "team",
+    "concrete_l",
+    "deep_d",
+    "rust",
+    "rust_d",
+    "tideflat_d",
+    "reef_d",
+    "rust_l"
+   ],
+   "teamShare": 0.254
+  },
+  {
+   "id": "a_b14",
+   "group": "alliance-bld2",
+   "name": "起降场",
+   "class": "building",
+   "footprint": [
+    4,
+    3
+   ],
+   "tris": 2921,
+   "size": [
+    4.024,
+    3.34,
+    3.048
+   ],
+   "parts": [
+    "body",
+    "spinRadar",
+    "swayWindsock",
+    "swayFlag",
+    "scaffoldFrame",
+    "scaffoldHangar"
+   ],
+   "fx": [
+    "fx_smoke",
+    "fx_rally"
+   ],
+   "materials": [
+    "concrete_d",
+    "concrete",
+    "concrete_l",
+    "team",
+    "reef_d",
+    "reef",
+    "rust_d",
+    "reef_l",
+    "rust",
+    "deep_d",
+    "salt"
+   ],
+   "teamShare": 0.463
+  },
+  {
+   "id": "a_b15",
+   "group": "alliance-bld2",
+   "name": "镇海司",
+   "class": "building",
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 2963,
+   "size": [
+    3,
+    3.93,
+    3.02
+   ],
+   "parts": [
+    "body",
+    "spinBeacon",
+    "swayBanner",
+    "swayFlag",
+    "scaffoldFrame"
+   ],
+   "fx": [
+    "fx_smoke"
+   ],
+   "materials": [
+    "concrete_d",
+    "concrete",
+    "concrete_l",
+    "team",
+    "deep_d",
+    "rust",
+    "rust_d",
+    "rust_l",
+    "reef_d",
+    "salt",
+    "glow_team"
+   ],
+   "teamShare": 0.28
+  },
+  {
+   "id": "a_b16",
+   "group": "alliance-bld2",
+   "name": "镇海炮",
+   "class": "building",
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 2914,
+   "size": [
+    4,
+    2.011,
+    4
+   ],
+   "parts": [
+    "body",
+    "turret",
+    "barrel",
+    "deployLegFL",
+    "deployLegFR",
+    "deployLegBL",
+    "deployLegBR",
+    "deployBraceL",
+    "deployBraceR",
+    "swayFlag",
+    "scaffoldFrame"
+   ],
+   "fx": [
+    "fx_smoke_turret",
+    "fx_muzzle",
+    "fx_muzzle_l",
+    "fx_muzzle_r",
+    "fx_smoke"
+   ],
+   "materials": [
+    "concrete_d",
+    "concrete",
+    "team",
+    "concrete_l",
+    "reef_d",
+    "rust_d",
+    "rust",
+    "deep_d",
+    "salt"
+   ],
+   "teamShare": 0.275
+  }
+ ]
+}

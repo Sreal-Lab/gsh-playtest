@@ -1,0 +1,267 @@
+{
+ "group": "alliance-veh",
+ "models": [
+  {
+   "id": "a_u06",
+   "group": "alliance-veh",
+   "name": "采晶车",
+   "class": "vehicle",
+   "footprint": [
+    1.2,
+    1.8
+   ],
+   "tris": 1174,
+   "size": [
+    1.16,
+    1.2,
+    1.895
+   ],
+   "parts": [
+    "body",
+    "spinIdlerL",
+    "spinSprocketL",
+    "spinIdlerR",
+    "spinSprocketR",
+    "deployCargo",
+    "spinReel"
+   ],
+   "fx": [
+    "fx_smoke"
+   ],
+   "materials": [
+    "rust_d",
+    "concrete_d",
+    "concrete",
+    "reef",
+    "reef_d",
+    "team",
+    "rust",
+    "concrete_l",
+    "deep_d",
+    "rust_l",
+    "glow_crystal",
+    "glow_crystal_d",
+    "glow_crystal_l"
+   ],
+   "teamShare": 0.272
+  },
+  {
+   "id": "a_u07",
+   "group": "alliance-veh",
+   "name": "巡堤车",
+   "class": "vehicle",
+   "footprint": [
+    0.8,
+    1.4
+   ],
+   "tris": 1071,
+   "size": [
+    0.76,
+    1.1,
+    1.49
+   ],
+   "parts": [
+    "body",
+    "spinAxleF",
+    "spinAxleM",
+    "spinAxleR",
+    "swayFlag",
+    "spinRadar",
+    "turret",
+    "barrel"
+   ],
+   "fx": [
+    "fx_smoke",
+    "fx_muzzle"
+   ],
+   "materials": [
+    "concrete",
+    "deep_d",
+    "reef_d",
+    "team",
+    "concrete_l",
+    "concrete_d",
+    "rust_d",
+    "salt",
+    "rust",
+    "rust_l",
+    "reef"
+   ],
+   "teamShare": 0.27
+  },
+  {
+   "id": "a_u08",
+   "group": "alliance-veh",
+   "name": "“磐石”坦克",
+   "class": "vehicle",
+   "footprint": [
+    1.2,
+    1.6
+   ],
+   "tris": 1190,
+   "size": [
+    1.14,
+    1.2,
+    1.899
+   ],
+   "parts": [
+    "body",
+    "spinIdlerL",
+    "spinSprocketL",
+    "spinIdlerR",
+    "spinSprocketR",
+    "turret",
+    "swayFlag",
+    "barrel"
+   ],
+   "fx": [
+    "fx_smoke_l",
+    "fx_smoke_r",
+    "fx_muzzle"
+   ],
+   "materials": [
+    "rust_d",
+    "concrete_d",
+    "concrete",
+    "team",
+    "reef",
+    "reef_d",
+    "rust",
+    "salt",
+    "concrete_l"
+   ],
+   "teamShare": 0.263
+  },
+  {
+   "id": "a_u09",
+   "group": "alliance-veh",
+   "name": "“天幕”防空车",
+   "class": "vehicle",
+   "footprint": [
+    1,
+    1.5
+   ],
+   "tris": 1151,
+   "size": [
+    0.84,
+    1.073,
+    1.81
+   ],
+   "parts": [
+    "body",
+    "spinAxleF",
+    "spinAxleM",
+    "spinAxleR",
+    "turret",
+    "barrel",
+    "spinRadar",
+    "swayFlag"
+   ],
+   "fx": [
+    "fx_muzzle",
+    "fx_muzzle_l",
+    "fx_muzzle_r",
+    "fx_smoke"
+   ],
+   "materials": [
+    "concrete",
+    "deep_d",
+    "reef_d",
+    "team",
+    "concrete_l",
+    "concrete_d",
+    "rust_d",
+    "salt",
+    "rust"
+   ],
+   "teamShare": 0.363
+  },
+  {
+   "id": "a_u10",
+   "group": "alliance-veh",
+   "name": "“夯锤”攻城炮",
+   "class": "vehicle",
+   "footprint": [
+    1.2,
+    1.8
+   ],
+   "tris": 1191,
+   "size": [
+    1.12,
+    1.401,
+    2.27
+   ],
+   "parts": [
+    "body",
+    "spinSprocketL",
+    "spinSprocketR",
+    "deploySpadeL",
+    "deploySpadeR",
+    "turret",
+    "barrel",
+    "swayFlag"
+   ],
+   "fx": [
+    "fx_smoke_l",
+    "fx_smoke_r",
+    "fx_muzzle",
+    "fx_smoke"
+   ],
+   "materials": [
+    "rust_d",
+    "concrete_d",
+    "reef",
+    "reef_d",
+    "team",
+    "rust",
+    "concrete",
+    "concrete_l",
+    "deep_d"
+   ],
+   "teamShare": 0.404
+  },
+  {
+   "id": "a_u11",
+   "group": "alliance-veh",
+   "name": "“涉滩”运兵车",
+   "class": "vehicle",
+   "footprint": [
+    1.1,
+    1.7
+   ],
+   "tris": 952,
+   "size": [
+    0.99,
+    1.121,
+    1.865
+   ],
+   "parts": [
+    "body",
+    "spinAxleF",
+    "spinAxleM",
+    "spinAxleR",
+    "deployRamp",
+    "turret",
+    "barrel",
+    "swayFlag"
+   ],
+   "fx": [
+    "fx_muzzle",
+    "fx_smoke"
+   ],
+   "materials": [
+    "concrete",
+    "reef_d",
+    "team",
+    "concrete_l",
+    "deep_d",
+    "tideflat",
+    "tideflat_d",
+    "concrete_d",
+    "rust_d",
+    "rust"
+   ],
+   "teamShare": 0.257
+  }
+ ]
+}

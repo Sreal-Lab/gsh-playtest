@@ -1,0 +1,130 @@
+{
+  "id": "golem",
+  "url": "/gsh-playtest/g05/assets/models/encounters/m4-arena/golem.glb",
+  "metersPerUnit": 1,
+  "upAxis": "+Y",
+  "forwardAxis": "-Z",
+  "origin": "sole-center",
+  "rootMotion": false,
+  "heightMeters": 4.0,
+  "triangles": 7200,
+  "rig": "rigid node hierarchy; clone with Object3D.clone(true), use AnimationMixer per instance",
+  "sockets": {
+    "foot.L": {
+      "node": "foot_L",
+      "restPositionMeters": [
+        -0.65,
+        0,
+        -0.21
+      ]
+    },
+    "foot.R": {
+      "node": "foot_R",
+      "restPositionMeters": [
+        0.65,
+        0,
+        -0.21
+      ]
+    },
+    "throw_hand": {
+      "node": "throw_hand",
+      "restPositionMeters": [
+        1.365,
+        1.3,
+        -0.375
+      ]
+    },
+    "head_top": {
+      "node": "head_top",
+      "restPositionMeters": [
+        0,
+        4.2,
+        -0.04
+      ]
+    },
+    "slam.L": {
+      "node": "slam_L",
+      "restPositionMeters": [
+        -1.315,
+        0.75,
+        -0.205
+      ]
+    },
+    "slam.R": {
+      "node": "slam_R",
+      "restPositionMeters": [
+        1.315,
+        0.75,
+        -0.205
+      ]
+    }
+  },
+  "clips": {
+    "loop": [
+      "idle",
+      "walk"
+    ],
+    "once": [
+      "slam",
+      "throw",
+      "hurt"
+    ],
+    "holdLastFrame": [
+      "death"
+    ]
+  },
+  "clipTimingSeconds": {
+    "idle": 3.2,
+    "walk": 1.6,
+    "slam": 1.98,
+    "throw": 1.8,
+    "hurt": 0.32,
+    "death": 2.2
+  },
+  "events": {
+    "slam": {
+      "telegraphStart": 0,
+      "windupComplete": 1.0,
+      "impact": 1.0,
+      "recoveryEnd": 1.98
+    },
+    "throw": {
+      "release": 1.0,
+      "projectileFlightSeconds": 1.2
+    },
+    "walk": {
+      "foot.L": [
+        0.0,
+        0.8
+      ],
+      "foot.R": [
+        0.4,
+        1.2
+      ]
+    },
+    "death": {
+      "collapse": 1.0,
+      "remove": 2.2
+    }
+  },
+  "animationNotes": "Slam impact is authored at 1.0 s, matching the one-second gameplay telegraph. Schedule damage from simulation and align clip time; animations do not apply damage. Throw projectile is spawned by gameplay at throw_hand, no baked projectile.",
+  "collision": {
+    "type": "capsule",
+    "radiusMeters": 1.15,
+    "heightMeters": 4,
+    "center": [
+      0,
+      2,
+      0
+    ],
+    "source": "gameplay collider, independent of articulated hands"
+  },
+  "textures": {
+    "baseColor": "/gsh-playtest/g05/assets/textures/m4-arena/golem-color.png",
+    "occlusionRoughnessMetallic": "/gsh-playtest/g05/assets/textures/m4-arena/golem-orm.png",
+    "normal": "/gsh-playtest/g05/assets/textures/m4-arena/golem-normal.png"
+  },
+  "source": "tools/assets/encounters/m4-arena/golem.py",
+  "seed": 408713,
+  "license": "CC0-1.0"
+}

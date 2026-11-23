@@ -1,0 +1,1 @@
+var e={road:`公路赛`,dirt:`泥地赛`,cross:`越野赛`,street:`街头赛`,drift:`漂移赛`,drag:`直线加速`,endurance:`耐力赛`,duel:`一对一`,showcase:`表演赛`};export{e as t};

@@ -1,0 +1,202 @@
+{
+ "group": "sail",
+ "models": [
+  {
+   "id": "t_b01",
+   "group": "sail",
+   "name": "母帆",
+   "class": "building",
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 2996,
+   "size": [
+    3.56,
+    3.45,
+    3.905
+   ],
+   "parts": [
+    "body",
+    "swaySailMain",
+    "swaySailFore",
+    "swayFlagTop",
+    "swayFlagFore",
+    "swayBanner",
+    "spinVane"
+   ],
+   "fx": [
+    "fx_dock",
+    "fx_smoke"
+   ],
+   "materials": [
+    "bone",
+    "ochre_d",
+    "bone_d",
+    "wreck",
+    "wreck_d",
+    "wreck_l",
+    "team",
+    "ochre",
+    "reef",
+    "reef_l",
+    "vermilion"
+   ],
+   "teamShare": 0.333
+  },
+  {
+   "id": "t_u01",
+   "group": "sail",
+   "name": "鱼叉手",
+   "class": "infantry",
+   "footprint": [
+    0.5,
+    0.5
+   ],
+   "tris": 485,
+   "size": [
+    0.502,
+    0.837,
+    0.636
+   ],
+   "parts": [
+    "swingL",
+    "swingR",
+    "body"
+   ],
+   "fx": [],
+   "materials": [
+    "bone",
+    "reef",
+    "wreck_d",
+    "bone_d",
+    "vermilion",
+    "team",
+    "ochre_d",
+    "wreck_l",
+    "ochre",
+    "wreck"
+   ],
+   "teamShare": 0.308
+  },
+  {
+   "id": "t_u06",
+   "group": "sail",
+   "name": "掠潮快橇",
+   "class": "vehicle",
+   "footprint": [
+    0.7,
+    1.5
+   ],
+   "tris": 1146,
+   "size": [
+    0.786,
+    1.563,
+    1.615
+   ],
+   "parts": [
+    "body",
+    "swaySail",
+    "swayFlag",
+    "turret",
+    "barrel"
+   ],
+   "fx": [
+    "fx_smoke",
+    "fx_wake",
+    "fx_muzzle"
+   ],
+   "materials": [
+    "bone",
+    "vermilion",
+    "bone_d",
+    "wreck",
+    "wreck_d",
+    "wreck_l",
+    "ochre_d",
+    "ochre",
+    "team"
+   ],
+   "teamShare": 0.259
+  },
+  {
+   "id": "t_u12",
+   "group": "sail",
+   "name": "“破浪”撞角舰",
+   "class": "giant",
+   "footprint": [
+    1.2,
+    2.7
+   ],
+   "tris": 2400,
+   "size": [
+    1.027,
+    2.357,
+    2.86
+   ],
+   "parts": [
+    "body",
+    "swaySailA",
+    "swayFlagA",
+    "swaySailB",
+    "swayFlagB",
+    "swaySailC",
+    "swayFlagC"
+   ],
+   "fx": [
+    "fx_wake",
+    "fx_smoke"
+   ],
+   "materials": [
+    "bone",
+    "ochre_d",
+    "bone_d",
+    "wreck_l",
+    "vermilion",
+    "reef",
+    "wreck",
+    "wreck_d",
+    "ochre",
+    "reef_l",
+    "team"
+   ],
+   "teamShare": 0.266
+  },
+  {
+   "id": "t_u13",
+   "group": "sail",
+   "name": "风鹞",
+   "class": "air",
+   "footprint": [
+    1.6,
+    1.2
+   ],
+   "tris": 768,
+   "size": [
+    1.66,
+    0.767,
+    1.401
+   ],
+   "parts": [
+    "body",
+    "swayWingL",
+    "swayWingR",
+    "swayTail"
+   ],
+   "fx": [
+    "fx_muzzle",
+    "fx_smoke"
+   ],
+   "materials": [
+    "ochre_d",
+    "wreck",
+    "bone_d",
+    "wreck_l",
+    "ochre",
+    "team",
+    "vermilion"
+   ],
+   "teamShare": 0.613
+  }
+ ]
+}

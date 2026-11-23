@@ -1,0 +1,1 @@
+var e=9e3,t=7e3;function n(e){return-e}function r(e,t){return Math.atan2(e,-t)}export{n as i,t as n,r,e as t};

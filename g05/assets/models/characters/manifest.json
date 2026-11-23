@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "metersPerUnit": 1,
+  "upAxis": "+Y",
+  "forwardAxis": "-Z",
+  "origin": "sole-center",
+  "rootMotion": false,
+  "texturesEmbedded": true,
+  "characters": {
+    "fox": {
+      "url": "/gsh-playtest/g05/assets/models/characters/fox.glb",
+      "heightMeters": 1.884,
+      "heightWithoutHatMeters": 1.611,
+      "triangles": 5969,
+      "sockets": { "projectile": "muzzle" },
+      "clips": {
+        "loop": ["idle", "run", "fall", "slide"],
+        "once": ["jump", "land", "hurt"],
+        "holdLastFrame": ["death"]
+      },
+      "textures": {
+        "baseColor": "/gsh-playtest/g05/assets/textures/characters/fox-color.png",
+        "occlusion": "/gsh-playtest/g05/assets/textures/characters/fox-ao.png",
+        "metallicRoughness": "/gsh-playtest/g05/assets/textures/characters/fox-surface.png",
+        "emissive": "/gsh-playtest/g05/assets/textures/characters/fox-ember.png"
+      }
+    },
+    "goblin": {
+      "url": "/gsh-playtest/g05/assets/models/characters/goblin.glb",
+      "heightMeters": 1.138,
+      "triangles": 1779,
+      "sockets": {},
+      "clips": {
+        "loop": ["idle", "run", "fall", "slide"],
+        "once": ["jump", "land", "hurt", "attack"],
+        "holdLastFrame": ["death"]
+      },
+      "textures": {
+        "baseColor": "/gsh-playtest/g05/assets/textures/characters/goblin-color.png",
+        "occlusion": "/gsh-playtest/g05/assets/textures/characters/goblin-ao.png",
+        "metallicRoughness": "/gsh-playtest/g05/assets/textures/characters/goblin-surface.png"
+      }
+    }
+  }
+}

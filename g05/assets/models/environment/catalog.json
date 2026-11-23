@@ -1,0 +1,1478 @@
+{
+  "version": 1,
+  "units": "metres",
+  "up": "+Y",
+  "handedness": "right",
+  "origin": [
+    0,
+    0,
+    0
+  ],
+  "originPlacement": "ground",
+  "visualScene": "Visual",
+  "physicsScene": "Physics",
+  "collisionUri": "/gsh-playtest/g05/assets/models/environment/collision.json",
+  "assets": [
+    {
+      "assetId": "chest",
+      "uri": "/gsh-playtest/g05/assets/models/environment/chest.glb",
+      "category": "interactable",
+      "sizeMeters": [
+        1.72782,
+        0.947,
+        0.94
+      ],
+      "boundsMeters": {
+        "min": [
+          -0.86391,
+          0,
+          -0.46
+        ],
+        "max": [
+          0.86391,
+          0.947,
+          0.48
+        ]
+      },
+      "materials": [
+        "Forest_workshop_painted_oak_and_brass"
+      ],
+      "visibleTriangles": 3594,
+      "animations": [
+        {
+          "name": "open",
+          "durationSeconds": 0.62,
+          "loop": false
+        },
+        {
+          "name": "close",
+          "durationSeconds": 0.5,
+          "loop": false
+        }
+      ],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/props-workshop.png",
+        "/gsh-playtest/g05/assets/textures/environment/props-workshop-orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_chest_closed",
+        "COL_chest_open"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_chest_closed"
+      ],
+      "collisionStates": {
+        "closed": [
+          "COL_chest_closed"
+        ],
+        "open": [
+          "COL_chest_open"
+        ]
+      },
+      "cloneMode": "animatedHierarchy"
+    },
+    {
+      "assetId": "coin",
+      "uri": "/gsh-playtest/g05/assets/models/environment/coin.glb",
+      "category": "pickup",
+      "sizeMeters": [
+        0.35436,
+        0.358,
+        0.0682
+      ],
+      "boundsMeters": {
+        "min": [
+          -0.17718,
+          0,
+          -0.0341
+        ],
+        "max": [
+          0.17718,
+          0.358,
+          0.0341
+        ]
+      },
+      "materials": [
+        "Hammered_old_gold"
+      ],
+      "visibleTriangles": 516,
+      "animations": [],
+      "textureUris": [],
+      "collisionMeshes": [],
+      "defaultCollisionMeshes": [],
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "crystal",
+      "uri": "/gsh-playtest/g05/assets/models/environment/crystal.glb",
+      "category": "pickup",
+      "sizeMeters": [
+        0.29888,
+        0.465,
+        0.1838
+      ],
+      "boundsMeters": {
+        "min": [
+          -0.1525,
+          0,
+          -0.0919
+        ],
+        "max": [
+          0.14638,
+          0.465,
+          0.0919
+        ]
+      },
+      "materials": [
+        "Aether_prismatic_facets"
+      ],
+      "visibleTriangles": 52,
+      "animations": [],
+      "textureUris": [],
+      "collisionMeshes": [],
+      "defaultCollisionMeshes": [],
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "fern_spray",
+      "uri": "/gsh-playtest/g05/assets/models/environment/fern_spray.glb",
+      "category": "foliage",
+      "sizeMeters": [
+        1.0632,
+        0.59093,
+        1.18441
+      ],
+      "boundsMeters": {
+        "min": [
+          -0.54698,
+          0,
+          -0.60424
+        ],
+        "max": [
+          0.51622,
+          0.59093,
+          0.58017
+        ]
+      },
+      "materials": [
+        "Forest pigment • matte leaves"
+      ],
+      "visibleTriangles": 2304,
+      "animations": [],
+      "textureUris": [],
+      "collisionMeshes": [],
+      "defaultCollisionMeshes": [],
+      "lods": [
+        {
+          "level": 1,
+          "fromMeters": 13,
+          "uri": "/gsh-playtest/g05/assets/models/environment/fern_spray_lod1.glb",
+          "visibleTriangles": 360
+        }
+      ],
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "grass_tuft",
+      "uri": "/gsh-playtest/g05/assets/models/environment/grass_tuft.glb",
+      "category": "foliage",
+      "sizeMeters": [
+        0.68429,
+        0.39763,
+        0.61518
+      ],
+      "boundsMeters": {
+        "min": [
+          -0.38531,
+          0,
+          -0.35561
+        ],
+        "max": [
+          0.29898,
+          0.39763,
+          0.25957
+        ]
+      },
+      "materials": [
+        "Forest pigment • matte leaves"
+      ],
+      "visibleTriangles": 245,
+      "animations": [],
+      "textureUris": [],
+      "collisionMeshes": [],
+      "defaultCollisionMeshes": [],
+      "lods": [
+        {
+          "level": 1,
+          "fromMeters": 11,
+          "uri": "/gsh-playtest/g05/assets/models/environment/grass_tuft_lod1.glb",
+          "visibleTriangles": 19
+        }
+      ],
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "gravel_talus",
+      "uri": "/gsh-playtest/g05/assets/models/environment/gravel_talus.glb",
+      "category": "stone",
+      "sizeMeters": [
+        1.01852,
+        0.08106,
+        0.50509
+      ],
+      "boundsMeters": {
+        "min": [
+          -0.5253,
+          0,
+          -0.24775
+        ],
+        "max": [
+          0.49322,
+          0.08106,
+          0.25734
+        ]
+      },
+      "materials": [
+        "Weathered limestone • lichen and cut relief"
+      ],
+      "visibleTriangles": 500,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png"
+      ],
+      "collisionMeshes": [],
+      "defaultCollisionMeshes": [],
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "portal_dais",
+      "uri": "/gsh-playtest/g05/assets/models/environment/portal_dais.glb",
+      "category": "stone",
+      "sizeMeters": [
+        12.0,
+        0.423,
+        12.0
+      ],
+      "boundsMeters": {
+        "min": [
+          -6.0,
+          0,
+          -6.0
+        ],
+        "max": [
+          6.0,
+          0.423,
+          6.0
+        ]
+      },
+      "materials": [
+        "Weathered limestone • lichen and cut relief",
+        "Forest pigment • matte leaves"
+      ],
+      "visibleTriangles": 1000,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_portal_dais"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_portal_dais"
+      ],
+      "gameplay": {
+        "diameterMeters": 12,
+        "standingHeightMeters": 0.42,
+        "flatTopRadiusMeters": 5.3,
+        "apronWidthMeters": 0.7
+      },
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "pot",
+      "uri": "/gsh-playtest/g05/assets/models/environment/pot.glb",
+      "category": "interactable",
+      "sizeMeters": [
+        0.77146,
+        0.797,
+        0.69321
+      ],
+      "boundsMeters": {
+        "min": [
+          -0.38681,
+          0,
+          -0.35185
+        ],
+        "max": [
+          0.38465,
+          0.797,
+          0.34136
+        ]
+      },
+      "materials": [
+        "Redware_seed_slip_and_glaze"
+      ],
+      "visibleTriangles": 2284,
+      "animations": [
+        {
+          "name": "break",
+          "durationSeconds": 0.6,
+          "loop": false
+        }
+      ],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/props-redware.png",
+        "/gsh-playtest/g05/assets/textures/environment/props-redware-orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_pot_trigger"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_pot_trigger"
+      ],
+      "collisionStates": {
+        "intact": [
+          "COL_pot_trigger"
+        ],
+        "broken": []
+      },
+      "cloneMode": "skeleton"
+    },
+    {
+      "assetId": "rock_cover_2m",
+      "uri": "/gsh-playtest/g05/assets/models/environment/rock_cover_2m.glb",
+      "category": "stone",
+      "sizeMeters": [
+        4.5426,
+        2.0,
+        2.60525
+      ],
+      "boundsMeters": {
+        "min": [
+          -2.12839,
+          0,
+          -1.22
+        ],
+        "max": [
+          2.41421,
+          2.0,
+          1.38525
+        ]
+      },
+      "materials": [
+        "Weathered limestone • lichen and cut relief",
+        "Forest pigment • matte leaves"
+      ],
+      "visibleTriangles": 903,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_rock_cover_2m"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_rock_cover_2m"
+      ],
+      "gameplay": {
+        "standingHeightMeters": 2,
+        "flatTopMinimumWidthMeters": 1.5
+      },
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "rock_field",
+      "uri": "/gsh-playtest/g05/assets/models/environment/rock_field.glb",
+      "category": "stone",
+      "sizeMeters": [
+        1.71985,
+        0.95242,
+        1.50187
+      ],
+      "boundsMeters": {
+        "min": [
+          -0.82425,
+          0,
+          -0.77286
+        ],
+        "max": [
+          0.8956,
+          0.95242,
+          0.72901
+        ]
+      },
+      "materials": [
+        "Weathered limestone • lichen and cut relief"
+      ],
+      "visibleTriangles": 210,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_rock_field"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_rock_field"
+      ],
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "rock_shelf",
+      "uri": "/gsh-playtest/g05/assets/models/environment/rock_shelf.glb",
+      "category": "stone",
+      "sizeMeters": [
+        3.69186,
+        1.03904,
+        2.01248
+      ],
+      "boundsMeters": {
+        "min": [
+          -1.838,
+          0,
+          -0.89822
+        ],
+        "max": [
+          1.85386,
+          1.03904,
+          1.11426
+        ]
+      },
+      "materials": [
+        "Weathered limestone • lichen and cut relief"
+      ],
+      "visibleTriangles": 320,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_rock_shelf"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_rock_shelf"
+      ],
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "ruin_briar_gate",
+      "uri": "/gsh-playtest/g05/assets/models/environment/ruin_briar_gate.glb",
+      "category": "ruin",
+      "sizeMeters": [
+        4.82885,
+        3.8962,
+        1.43063
+      ],
+      "boundsMeters": {
+        "min": [
+          -2.89747,
+          0,
+          -0.69197
+        ],
+        "max": [
+          1.93138,
+          3.8962,
+          0.73866
+        ]
+      },
+      "materials": [
+        "Weathered limestone • lichen and cut relief",
+        "Forest pigment • matte leaves"
+      ],
+      "visibleTriangles": 5409,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_ruin_briar_gate"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_ruin_briar_gate"
+      ],
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "ruin_pier",
+      "uri": "/gsh-playtest/g05/assets/models/environment/ruin_pier.glb",
+      "category": "ruin",
+      "sizeMeters": [
+        1.38926,
+        2.2757,
+        1.35481
+      ],
+      "boundsMeters": {
+        "min": [
+          -0.68956,
+          0,
+          -0.67688
+        ],
+        "max": [
+          0.6997,
+          2.2757,
+          0.67793
+        ]
+      },
+      "materials": [
+        "Weathered limestone • lichen and cut relief",
+        "Forest pigment • matte leaves"
+      ],
+      "visibleTriangles": 1873,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_ruin_pier"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_ruin_pier"
+      ],
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "ruin_rubble",
+      "uri": "/gsh-playtest/g05/assets/models/environment/ruin_rubble.glb",
+      "category": "ruin",
+      "sizeMeters": [
+        2.89473,
+        1.15,
+        3.61241
+      ],
+      "boundsMeters": {
+        "min": [
+          -1.53955,
+          0,
+          -1.73311
+        ],
+        "max": [
+          1.35518,
+          1.15,
+          1.8793
+        ]
+      },
+      "materials": [
+        "Weathered limestone • lichen and cut relief"
+      ],
+      "visibleTriangles": 556,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_ruin_rubble"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_ruin_rubble"
+      ],
+      "gameplay": {
+        "ascendingDirection": "-Z",
+        "steppingHeightsMeters": [
+          0.28,
+          0.58,
+          0.87,
+          1.15
+        ]
+      },
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "ruin_tower_spiral",
+      "uri": "/gsh-playtest/g05/assets/models/environment/ruin_tower_spiral.glb",
+      "category": "ruin",
+      "sizeMeters": [
+        11.0,
+        12.85224,
+        11.0
+      ],
+      "boundsMeters": {
+        "min": [
+          -5.5,
+          0,
+          -5.5
+        ],
+        "max": [
+          5.5,
+          12.85224,
+          5.5
+        ]
+      },
+      "materials": [
+        "Priory limestone • lichen and worn treads",
+        "Ivy • matte forest pigment"
+      ],
+      "visibleTriangles": 18141,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_tower_spiral_ramp",
+        "COL_tower_core",
+        "COL_tower_top_landing",
+        "COL_tower_slide_buttress",
+        "COL_tower_broken_crown"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_tower_spiral_ramp",
+        "COL_tower_core",
+        "COL_tower_top_landing",
+        "COL_tower_slide_buttress",
+        "COL_tower_broken_crown"
+      ],
+      "gameplay": {
+        "entranceDirection": "+Z",
+        "heightMeters": 12,
+        "turns": 2,
+        "innerRadiusMeters": 3.1,
+        "outerRadiusMeters": 5.5,
+        "segmentsPerTurn": 96,
+        "rampThicknessMeters": 0.24,
+        "chestAnchor": [
+          0,
+          12,
+          0
+        ],
+        "entranceAnchor": [
+          0,
+          0,
+          4.3
+        ],
+        "topArrivalAnchor": [
+          0,
+          12,
+          4.3
+        ],
+        "freeFallExitAnchor": [
+          5.25,
+          12,
+          0.7
+        ],
+        "freeFallAnchor": [
+          6,
+          12,
+          0.7
+        ],
+        "wallSlideExitAnchor": [
+          4.3,
+          12,
+          4.3
+        ],
+        "wallSlideAnchor": [
+          4.59,
+          12,
+          4.59
+        ],
+        "minimumApproachClearanceMeters": 2.4
+      },
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "ruin_wall",
+      "uri": "/gsh-playtest/g05/assets/models/environment/ruin_wall.glb",
+      "category": "ruin",
+      "sizeMeters": [
+        5.44869,
+        2.11342,
+        1.57414
+      ],
+      "boundsMeters": {
+        "min": [
+          -2.73365,
+          0,
+          -0.77473
+        ],
+        "max": [
+          2.71504,
+          2.11342,
+          0.79941
+        ]
+      },
+      "materials": [
+        "Weathered limestone • lichen and cut relief",
+        "Forest pigment • matte leaves"
+      ],
+      "visibleTriangles": 4479,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_ruin_wall"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_ruin_wall"
+      ],
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "ruin_wall_2m",
+      "uri": "/gsh-playtest/g05/assets/models/environment/ruin_wall_2m.glb",
+      "category": "ruin",
+      "sizeMeters": [
+        6.32538,
+        2.0,
+        1.8799
+      ],
+      "boundsMeters": {
+        "min": [
+          -3.18104,
+          0,
+          -0.895
+        ],
+        "max": [
+          3.14434,
+          2.0,
+          0.9849
+        ]
+      },
+      "materials": [
+        "Weathered limestone • lichen and cut relief",
+        "Forest pigment • matte leaves"
+      ],
+      "visibleTriangles": 3089,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_ruin_wall_2m"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_ruin_wall_2m"
+      ],
+      "gameplay": {
+        "standingHeightMeters": 2,
+        "copingLengthMeters": 2.82,
+        "copingWidthMeters": 1.32
+      },
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "ruin_wall_3m",
+      "uri": "/gsh-playtest/g05/assets/models/environment/ruin_wall_3m.glb",
+      "category": "ruin",
+      "sizeMeters": [
+        6.32968,
+        3.0,
+        1.8777
+      ],
+      "boundsMeters": {
+        "min": [
+          -3.1844,
+          0,
+          -0.895
+        ],
+        "max": [
+          3.14528,
+          3.0,
+          0.9827
+        ]
+      },
+      "materials": [
+        "Weathered limestone • lichen and cut relief",
+        "Forest pigment • matte leaves"
+      ],
+      "visibleTriangles": 3985,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_ruin_wall_3m"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_ruin_wall_3m"
+      ],
+      "gameplay": {
+        "standingHeightMeters": 3,
+        "copingLengthMeters": 2.82,
+        "copingWidthMeters": 1.32
+      },
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "shrine_challenge",
+      "uri": "/gsh-playtest/g05/assets/models/environment/shrine_challenge.glb",
+      "category": "interactable",
+      "sizeMeters": [
+        2.05551,
+        3.48,
+        1.68584
+      ],
+      "boundsMeters": {
+        "min": [
+          -1.02791,
+          0,
+          -0.84283
+        ],
+        "max": [
+          1.0276,
+          3.48,
+          0.84301
+        ]
+      },
+      "materials": [
+        "Weathered shrine limestone",
+        "Sculpted relic • pixel mineral and metal",
+        "Forest pigment • shrine ivy",
+        "Challenge amethyst • cut runes"
+      ],
+      "visibleTriangles": 743,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png",
+        "/gsh-playtest/g05/assets/textures/environment/shrine_relic_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/shrine_relic_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_shrine_challenge"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_shrine_challenge"
+      ],
+      "gameplay": {
+        "shape": "purple obelisk",
+        "interactionAnchor": [
+          0,
+          1.3,
+          0.85
+        ]
+      },
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "shrine_charge",
+      "uri": "/gsh-playtest/g05/assets/models/environment/shrine_charge.glb",
+      "category": "interactable",
+      "sizeMeters": [
+        8.0,
+        2.4,
+        8.0
+      ],
+      "boundsMeters": {
+        "min": [
+          -4.0,
+          0,
+          -4.0
+        ],
+        "max": [
+          4.0,
+          2.4,
+          4.0
+        ]
+      },
+      "materials": [
+        "Weathered shrine limestone",
+        "Sculpted relic • pixel mineral and metal",
+        "Forest pigment • shrine ivy",
+        "Charge blue • restrained rune light"
+      ],
+      "visibleTriangles": 837,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png",
+        "/gsh-playtest/g05/assets/textures/environment/shrine_relic_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/shrine_relic_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_shrine_charge"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_shrine_charge"
+      ],
+      "gameplay": {
+        "shape": "stone pillar",
+        "interactionRadiusMeters": 4,
+        "ringNode": "ChargeRadius4m",
+        "ringCollision": false,
+        "interactionAnchor": [
+          0,
+          1.1,
+          0
+        ]
+      },
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "shrine_greed",
+      "uri": "/gsh-playtest/g05/assets/models/environment/shrine_greed.glb",
+      "category": "interactable",
+      "sizeMeters": [
+        1.95376,
+        2.73,
+        1.59125
+      ],
+      "boundsMeters": {
+        "min": [
+          -0.97579,
+          0,
+          -0.79611
+        ],
+        "max": [
+          0.97797,
+          2.73,
+          0.79514
+        ]
+      },
+      "materials": [
+        "Weathered shrine limestone",
+        "Sculpted relic • pixel mineral and metal"
+      ],
+      "visibleTriangles": 1579,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png",
+        "/gsh-playtest/g05/assets/textures/environment/shrine_relic_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/shrine_relic_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_shrine_greed"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_shrine_greed"
+      ],
+      "gameplay": {
+        "shape": "skull with recessed eye sockets",
+        "interactionAnchor": [
+          0,
+          1.3,
+          0.85
+        ]
+      },
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "shrine_moai",
+      "uri": "/gsh-playtest/g05/assets/models/environment/shrine_moai.glb",
+      "category": "interactable",
+      "sizeMeters": [
+        1.95618,
+        3.0,
+        1.765
+      ],
+      "boundsMeters": {
+        "min": [
+          -0.97839,
+          0,
+          -0.835
+        ],
+        "max": [
+          0.97779,
+          3.0,
+          0.93
+        ]
+      },
+      "materials": [
+        "Weathered shrine limestone",
+        "Sculpted relic • pixel mineral and metal",
+        "Forest pigment • shrine ivy"
+      ],
+      "visibleTriangles": 1259,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png",
+        "/gsh-playtest/g05/assets/textures/environment/shrine_relic_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/shrine_relic_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_shrine_moai"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_shrine_moai"
+      ],
+      "gameplay": {
+        "shape": "sculpted Moai head",
+        "interactionAnchor": [
+          0,
+          1.1,
+          0.8
+        ]
+      },
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "shrine_suction",
+      "uri": "/gsh-playtest/g05/assets/models/environment/shrine_suction.glb",
+      "category": "interactable",
+      "sizeMeters": [
+        2.56,
+        2.685,
+        1.51999
+      ],
+      "boundsMeters": {
+        "min": [
+          -1.28,
+          0,
+          -0.76039
+        ],
+        "max": [
+          1.28,
+          2.685,
+          0.7596
+        ]
+      },
+      "materials": [
+        "Weathered shrine limestone",
+        "Sculpted relic • pixel mineral and metal",
+        "Forest pigment • shrine ivy",
+        "Charge blue • restrained rune light"
+      ],
+      "visibleTriangles": 1285,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png",
+        "/gsh-playtest/g05/assets/textures/environment/shrine_relic_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/shrine_relic_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_shrine_suction"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_shrine_suction"
+      ],
+      "gameplay": {
+        "shape": "open horseshoe magnet",
+        "interactionAnchor": [
+          0,
+          1.5,
+          0.7
+        ]
+      },
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "standing_stone",
+      "uri": "/gsh-playtest/g05/assets/models/environment/standing_stone.glb",
+      "category": "stone",
+      "sizeMeters": [
+        1.738,
+        3.0,
+        1.3644
+      ],
+      "boundsMeters": {
+        "min": [
+          -0.892,
+          0,
+          -0.671
+        ],
+        "max": [
+          0.846,
+          3.0,
+          0.6934
+        ]
+      },
+      "materials": [
+        "Weathered limestone • lichen and cut relief",
+        "Forest pigment • matte leaves"
+      ],
+      "visibleTriangles": 765,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_atlas.png",
+        "/gsh-playtest/g05/assets/textures/environment/ruin_lichen_orm.png"
+      ],
+      "collisionMeshes": [
+        "COL_standing_stone"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_standing_stone"
+      ],
+      "gameplay": {
+        "heightMeters": 3,
+        "circleInstanceCount": 8,
+        "recommendedCircleDiameterMeters": 40,
+        "front": "+Z"
+      },
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "tree-alder",
+      "uri": "/gsh-playtest/g05/assets/models/environment/tree-alder.glb",
+      "category": "tree",
+      "sizeMeters": [
+        5.55127,
+        9.09727,
+        5.62868
+      ],
+      "boundsMeters": {
+        "min": [
+          -2.72256,
+          0,
+          -2.52265
+        ],
+        "max": [
+          2.82871,
+          9.09727,
+          3.10603
+        ]
+      },
+      "materials": [
+        "Bark_alder",
+        "Leaves_alder"
+      ],
+      "visibleTriangles": 4130,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/tree-alder-bark.png",
+        "/gsh-playtest/g05/assets/textures/environment/tree-alder-foliage.png"
+      ],
+      "collisionMeshes": [
+        "COL_Trunk"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_Trunk"
+      ],
+      "lods": [
+        {
+          "level": 1,
+          "fromMeters": 34,
+          "uri": "/gsh-playtest/g05/assets/models/environment/tree-alder-lod1.glb",
+          "visibleTriangles": 680
+        }
+      ],
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "tree-oak",
+      "uri": "/gsh-playtest/g05/assets/models/environment/tree-oak.glb",
+      "category": "tree",
+      "sizeMeters": [
+        7.37353,
+        7.64824,
+        7.02866
+      ],
+      "boundsMeters": {
+        "min": [
+          -3.53018,
+          0,
+          -3.37287
+        ],
+        "max": [
+          3.84335,
+          7.64824,
+          3.65579
+        ]
+      },
+      "materials": [
+        "Bark_oak",
+        "Leaves_oak"
+      ],
+      "visibleTriangles": 5554,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/tree-oak-bark.png",
+        "/gsh-playtest/g05/assets/textures/environment/tree-oak-foliage.png"
+      ],
+      "collisionMeshes": [
+        "COL_Trunk"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_Trunk"
+      ],
+      "lods": [
+        {
+          "level": 1,
+          "fromMeters": 34,
+          "uri": "/gsh-playtest/g05/assets/models/environment/tree-oak-lod1.glb",
+          "visibleTriangles": 880
+        }
+      ],
+      "cloneMode": "instance"
+    },
+    {
+      "assetId": "tree-pine",
+      "uri": "/gsh-playtest/g05/assets/models/environment/tree-pine.glb",
+      "category": "tree",
+      "sizeMeters": [
+        6.19326,
+        9.05253,
+        5.79179
+      ],
+      "boundsMeters": {
+        "min": [
+          -2.99548,
+          0,
+          -2.81449
+        ],
+        "max": [
+          3.19778,
+          9.05253,
+          2.9773
+        ]
+      },
+      "materials": [
+        "Bark_pine",
+        "Leaves_pine"
+      ],
+      "visibleTriangles": 6312,
+      "animations": [],
+      "textureUris": [
+        "/gsh-playtest/g05/assets/textures/environment/tree-pine-bark.png",
+        "/gsh-playtest/g05/assets/textures/environment/tree-pine-foliage.png"
+      ],
+      "collisionMeshes": [
+        "COL_Trunk"
+      ],
+      "defaultCollisionMeshes": [
+        "COL_Trunk"
+      ],
+      "lods": [
+        {
+          "level": 1,
+          "fromMeters": 34,
+          "uri": "/gsh-playtest/g05/assets/models/environment/tree-pine-lod1.glb",
+          "visibleTriangles": 788
+        }
+      ],
+      "cloneMode": "instance"
+    }
+  ],
+  "terrain": {
+    "textureSizePx": [
+      128,
+      128
+    ],
+    "wrap": "repeat",
+    "magFilter": "nearest",
+    "minFilter": "linear-mipmap-linear",
+    "uvProjection": "local or world XZ / tileMeters",
+    "colorSpace": {
+      "color": "sRGB",
+      "orm": "linear",
+      "normal": "linear"
+    },
+    "normalConvention": "OpenGL +Y tangent space",
+    "ormChannels": [
+      "occlusion",
+      "roughness",
+      "metallic"
+    ],
+    "atlasLayout": {
+      "columns": 2,
+      "rows": 2,
+      "origin": "top-left",
+      "color": "/gsh-playtest/g05/assets/textures/environment/ground_atlas_color.png",
+      "normal": "/gsh-playtest/g05/assets/textures/environment/ground_atlas_normal.png",
+      "orm": "/gsh-playtest/g05/assets/textures/environment/ground_atlas_orm.png"
+    },
+    "layers": [
+      {
+        "materialId": "ground_grass",
+        "tileMeters": 3.2,
+        "atlasCell": [
+          0,
+          0
+        ],
+        "color": "/gsh-playtest/g05/assets/textures/environment/ground_grass_color.png",
+        "normal": "/gsh-playtest/g05/assets/textures/environment/ground_grass_normal.png",
+        "orm": "/gsh-playtest/g05/assets/textures/environment/ground_grass_orm.png"
+      },
+      {
+        "materialId": "ground_mud",
+        "tileMeters": 3.8,
+        "atlasCell": [
+          1,
+          0
+        ],
+        "color": "/gsh-playtest/g05/assets/textures/environment/ground_mud_color.png",
+        "normal": "/gsh-playtest/g05/assets/textures/environment/ground_mud_normal.png",
+        "orm": "/gsh-playtest/g05/assets/textures/environment/ground_mud_orm.png"
+      },
+      {
+        "materialId": "ground_gravel",
+        "tileMeters": 2.8,
+        "atlasCell": [
+          0,
+          1
+        ],
+        "color": "/gsh-playtest/g05/assets/textures/environment/ground_gravel_color.png",
+        "normal": "/gsh-playtest/g05/assets/textures/environment/ground_gravel_normal.png",
+        "orm": "/gsh-playtest/g05/assets/textures/environment/ground_gravel_orm.png"
+      },
+      {
+        "materialId": "ground_outcrop",
+        "tileMeters": 4.6,
+        "atlasCell": [
+          1,
+          1
+        ],
+        "color": "/gsh-playtest/g05/assets/textures/environment/ground_outcrop_color.png",
+        "normal": "/gsh-playtest/g05/assets/textures/environment/ground_outcrop_normal.png",
+        "orm": "/gsh-playtest/g05/assets/textures/environment/ground_outcrop_orm.png"
+      }
+    ]
+  },
+  "prefabs": [
+    {
+      "prefabId": "briar-approach",
+      "grounding": "Place the arch and both wall sections on one level foundation. Ground other instances at their own XZ position.",
+      "clearance": {
+        "centerXZ": [
+          0,
+          0
+        ],
+        "directionXZ": [
+          0,
+          1
+        ],
+        "widthMeters": 1.98,
+        "heightMeters": 2.15
+      },
+      "instances": [
+        {
+          "assetId": "ruin_briar_gate",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "yaw": 0
+        },
+        {
+          "assetId": "ruin_wall",
+          "position": [
+            4.48,
+            0,
+            -0.15
+          ],
+          "yaw": 0.05
+        },
+        {
+          "assetId": "ruin_pier",
+          "position": [
+            7.49,
+            0,
+            -0.31
+          ],
+          "yaw": 0.05
+        },
+        {
+          "assetId": "ruin_wall",
+          "position": [
+            -5.39,
+            0,
+            -0.17
+          ],
+          "yaw": -0.12
+        },
+        {
+          "assetId": "tree-oak",
+          "position": [
+            -6.42,
+            0,
+            3.58
+          ],
+          "yaw": 1.36
+        },
+        {
+          "assetId": "tree-alder",
+          "position": [
+            7.08,
+            0,
+            2.12
+          ],
+          "yaw": 0.31
+        },
+        {
+          "assetId": "tree-pine",
+          "position": [
+            -4.31,
+            0,
+            -4.19
+          ],
+          "yaw": 1.2
+        },
+        {
+          "assetId": "rock_shelf",
+          "position": [
+            -5.31,
+            0,
+            4.1
+          ],
+          "yaw": -0.76
+        },
+        {
+          "assetId": "rock_field",
+          "position": [
+            5.83,
+            0,
+            4.02
+          ],
+          "yaw": 0.2
+        },
+        {
+          "assetId": "fern_spray",
+          "position": [
+            -4.37,
+            0,
+            3.34
+          ],
+          "yaw": 2.13
+        },
+        {
+          "assetId": "fern_spray",
+          "position": [
+            3.37,
+            0,
+            0.84
+          ],
+          "yaw": 2.6
+        },
+        {
+          "assetId": "grass_tuft",
+          "position": [
+            -2.11,
+            0,
+            0.91
+          ],
+          "yaw": 1.02
+        },
+        {
+          "assetId": "grass_tuft",
+          "position": [
+            2.15,
+            0,
+            1.18
+          ],
+          "yaw": 0.64
+        },
+        {
+          "assetId": "grass_tuft",
+          "position": [
+            3.91,
+            0,
+            0.91
+          ],
+          "yaw": 3.12
+        },
+        {
+          "assetId": "gravel_talus",
+          "position": [
+            -1.21,
+            0,
+            2.12
+          ],
+          "yaw": 0.42
+        }
+      ]
+    }
+  ]
+}

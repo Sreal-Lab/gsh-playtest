@@ -1,0 +1,398 @@
+{
+ "group": "neutral",
+ "models": [
+  {
+   "id": "n_bunker",
+   "group": "neutral",
+   "name": "废墟碉楼",
+   "class": "building",
+   "footprint": [
+    2.8,
+    2.8
+   ],
+   "tris": 2232,
+   "size": [
+    2.635,
+    2.971,
+    2.721
+   ],
+   "parts": [
+    "body",
+    "swayFlag"
+   ],
+   "fx": [],
+   "materials": [
+    "sand_d",
+    "concrete_d",
+    "concrete_l",
+    "concrete",
+    "reef_d",
+    "rust_d",
+    "rust",
+    "salt_d",
+    "team"
+   ],
+   "teamShare": 0.017
+  },
+  {
+   "id": "n_crate",
+   "group": "neutral",
+   "name": "漂流箱",
+   "class": "prop",
+   "footprint": [
+    1,
+    1
+   ],
+   "tris": 379,
+   "size": [
+    1.076,
+    0.606,
+    0.938
+   ],
+   "parts": [
+    "body"
+   ],
+   "fx": [],
+   "materials": [
+    "sand_d",
+    "wreck_d",
+    "wreck",
+    "rust",
+    "wreck_l",
+    "crystal",
+    "glow_crystal",
+    "bone_d",
+    "team",
+    "rust_d",
+    "salt",
+    "reef_d"
+   ],
+   "teamShare": 0.019
+  },
+  {
+   "id": "n_crystal_branch",
+   "group": "neutral",
+   "name": "分矿晶田",
+   "class": "prop",
+   "footprint": [
+    2.2,
+    2.2
+   ],
+   "tris": 301,
+   "size": [
+    2.218,
+    1.29,
+    2.064
+   ],
+   "parts": [
+    "body",
+    "deployCrystal0",
+    "deployCrystal1",
+    "deployCrystal2",
+    "deployCrystal3",
+    "deployCrystal4"
+   ],
+   "fx": [],
+   "materials": [
+    "sand_d",
+    "reef_d",
+    "reef",
+    "salt_d",
+    "reef_l",
+    "crystal_d",
+    "crystal",
+    "glow_crystal",
+    "crystal_l"
+   ],
+   "teamShare": 0
+  },
+  {
+   "id": "n_crystal_main",
+   "group": "neutral",
+   "name": "主晶田",
+   "class": "prop",
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 395,
+   "size": [
+    2.886,
+    1.67,
+    3.021
+   ],
+   "parts": [
+    "body",
+    "deployCrystal0",
+    "deployCrystal1",
+    "deployCrystal2",
+    "deployCrystal3",
+    "deployCrystal4",
+    "deployCrystal5"
+   ],
+   "fx": [],
+   "materials": [
+    "sand_d",
+    "reef_d",
+    "reef",
+    "salt_d",
+    "reef_l",
+    "crystal_d",
+    "crystal",
+    "glow_crystal",
+    "crystal_l"
+   ],
+   "teamShare": 0
+  },
+  {
+   "id": "n_crystal_tidal",
+   "group": "neutral",
+   "name": "潮滩晶簇",
+   "class": "prop",
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 285,
+   "size": [
+    1.903,
+    0.81,
+    2.033
+   ],
+   "parts": [
+    "body",
+    "deployCrystal0",
+    "deployCrystal1",
+    "deployCrystal2",
+    "deployCrystal3",
+    "deployCrystal4",
+    "deployCrystal5"
+   ],
+   "fx": [],
+   "materials": [
+    "tideflat_d",
+    "tideflat_l",
+    "tideflat",
+    "salt",
+    "bone",
+    "deep_d",
+    "crystal_d",
+    "crystal",
+    "glow_crystal",
+    "crystal_l"
+   ],
+   "teamShare": 0
+  },
+  {
+   "id": "n_dock",
+   "group": "neutral",
+   "name": "旧船坞",
+   "class": "building",
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 2884,
+   "size": [
+    2.98,
+    1.709,
+    2.95
+   ],
+   "parts": [
+    "body",
+    "swayHook",
+    "spinWinch",
+    "swayFlag"
+   ],
+   "fx": [
+    "fx_hoist",
+    "fx_water"
+   ],
+   "materials": [
+    "tideflat_d",
+    "tideflat",
+    "concrete",
+    "concrete_l",
+    "concrete_d",
+    "rust",
+    "wreck_l",
+    "wreck",
+    "wreck_d",
+    "rust_d",
+    "bone_d",
+    "team",
+    "rust_l"
+   ],
+   "teamShare": 0.146
+  },
+  {
+   "id": "n_lighthouse",
+   "group": "neutral",
+   "name": "观潮灯塔",
+   "class": "building",
+   "footprint": [
+    2.8,
+    2.8
+   ],
+   "tris": 2923,
+   "size": [
+    2.549,
+    3.99,
+    2.196
+   ],
+   "parts": [
+    "body",
+    "spinLamp",
+    "swayFlag"
+   ],
+   "fx": [],
+   "materials": [
+    "reef_l",
+    "reef_d",
+    "reef",
+    "salt",
+    "concrete_d",
+    "concrete_l",
+    "concrete",
+    "rust",
+    "rust_d",
+    "rust_l",
+    "glow_crystal",
+    "team"
+   ],
+   "teamShare": 0.001
+  },
+  {
+   "id": "n_pump",
+   "group": "neutral",
+   "name": "旧泵站",
+   "class": "building",
+   "footprint": [
+    3,
+    3
+   ],
+   "tris": 2384,
+   "size": [
+    2.961,
+    2.364,
+    2.728
+   ],
+   "parts": [
+    "body",
+    "spinFlywheel"
+   ],
+   "fx": [],
+   "materials": [
+    "concrete_d",
+    "concrete_l",
+    "concrete",
+    "tideflat_d",
+    "rust_d",
+    "salt_d",
+    "rust",
+    "rust_l",
+    "team"
+   ],
+   "teamShare": 0.005
+  },
+  {
+   "id": "n_tideheart",
+   "group": "neutral",
+   "name": "潮心节点",
+   "class": "building",
+   "footprint": [
+    2,
+    2
+   ],
+   "tris": 2150,
+   "size": [
+    1.946,
+    1.55,
+    2.04
+   ],
+   "parts": [
+    "body",
+    "bobCore",
+    "spinRing"
+   ],
+   "fx": [
+    "fx_glow"
+   ],
+   "materials": [
+    "reef_d",
+    "basalt_l",
+    "team",
+    "basalt",
+    "glow_crystal",
+    "reef",
+    "rust",
+    "rust_d",
+    "glow_team",
+    "crystal_d",
+    "crystal",
+    "crystal_l"
+   ],
+   "teamShare": 0.263
+  },
+  {
+   "id": "n_wreck_large",
+   "group": "neutral",
+   "name": "大沉船骸",
+   "class": "prop",
+   "footprint": [
+    3.2,
+    3.4
+   ],
+   "tris": 380,
+   "size": [
+    2.768,
+    1.043,
+    2.334
+   ],
+   "parts": [
+    "body"
+   ],
+   "fx": [],
+   "materials": [
+    "sand_d",
+    "wreck",
+    "wreck_l",
+    "wreck_d",
+    "rust_d",
+    "rust",
+    "salt_d"
+   ],
+   "teamShare": 0
+  },
+  {
+   "id": "n_wreck_small",
+   "group": "neutral",
+   "name": "小沉船骸",
+   "class": "prop",
+   "footprint": [
+    2.2,
+    2.6
+   ],
+   "tris": 300,
+   "size": [
+    2.028,
+    0.815,
+    1.673
+   ],
+   "parts": [
+    "body"
+   ],
+   "fx": [],
+   "materials": [
+    "sand_d",
+    "wreck",
+    "wreck_l",
+    "wreck_d",
+    "rust_d",
+    "rust",
+    "salt_d"
+   ],
+   "teamShare": 0
+  }
+ ]
+}

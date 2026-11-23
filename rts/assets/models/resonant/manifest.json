@@ -1,0 +1,171 @@
+{
+ "group": "resonant",
+ "models": [
+  {
+   "id": "r_b01",
+   "group": "resonant",
+   "name": "潮心殿",
+   "class": "building",
+   "footprint": [
+    4,
+    4
+   ],
+   "tris": 2788,
+   "size": [
+    3.658,
+    3.984,
+    3.287
+   ],
+   "parts": [
+    "body",
+    "spinHalo",
+    "spinHalo2",
+    "spinShards"
+   ],
+   "fx": [
+    "fx_muzzle"
+   ],
+   "materials": [
+    "basalt",
+    "glow_aqua",
+    "basalt_l",
+    "crystal",
+    "team",
+    "glow_team",
+    "glow_lumen"
+   ],
+   "teamShare": 0.266
+  },
+  {
+   "id": "r_u01",
+   "group": "resonant",
+   "name": "聆卫",
+   "class": "infantry",
+   "footprint": [
+    0.42,
+    0.42
+   ],
+   "tris": 496,
+   "size": [
+    0.489,
+    1.011,
+    0.394
+   ],
+   "parts": [
+    "body",
+    "swingL",
+    "swingR"
+   ],
+   "fx": [
+    "fx_muzzle"
+   ],
+   "materials": [
+    "basalt",
+    "glow_lumen",
+    "glow_team",
+    "basalt_l",
+    "glow_aqua",
+    "crystal"
+   ],
+   "teamShare": 0.315
+  },
+  {
+   "id": "r_u05",
+   "group": "resonant",
+   "name": "游弋体",
+   "class": "vehicle",
+   "footprint": [
+    1.3,
+    1.32
+   ],
+   "tris": 819,
+   "size": [
+    1.4,
+    0.98,
+    1.5
+   ],
+   "parts": [
+    "body",
+    "bobHull",
+    "spinRing"
+   ],
+   "fx": [
+    "fx_muzzle"
+   ],
+   "materials": [
+    "basalt_l",
+    "crystal",
+    "glow_aqua",
+    "basalt",
+    "glow_team",
+    "glow_lumen"
+   ],
+   "teamShare": 0.304
+  },
+  {
+   "id": "r_u09",
+   "group": "resonant",
+   "name": "巨像“渊歌”",
+   "class": "giant",
+   "footprint": [
+    2.5,
+    2.5
+   ],
+   "tris": 2375,
+   "size": [
+    2.248,
+    2.655,
+    2.475
+   ],
+   "parts": [
+    "body",
+    "spinRing"
+   ],
+   "fx": [
+    "fx_muzzle"
+   ],
+   "materials": [
+    "basalt",
+    "basalt_l",
+    "glow_aqua",
+    "glow_team",
+    "crystal",
+    "glow_lumen"
+   ],
+   "teamShare": 0.265
+  },
+  {
+   "id": "r_u10",
+   "group": "resonant",
+   "name": "巡音梭",
+   "class": "air",
+   "footprint": [
+    2.05,
+    1.5
+   ],
+   "tris": 887,
+   "size": [
+    1.989,
+    0.72,
+    1.617
+   ],
+   "parts": [
+    "body",
+    "bobHull",
+    "spinRing"
+   ],
+   "fx": [
+    "fx_muzzle"
+   ],
+   "materials": [
+    "glow_team",
+    "basalt",
+    "glow_lumen",
+    "basalt_l",
+    "glow_aqua",
+    "crystal"
+   ],
+   "teamShare": 0.502
+  }
+ ]
+}

@@ -1,0 +1,856 @@
+{
+ "version": 1,
+ "units": "metre",
+ "axes": {
+  "forward": "+Z",
+  "up": "+Y",
+  "left": "+X",
+  "origin": "wheelbase midpoint on the ground"
+ },
+ "materials": {
+  "paint": "car paint; COLOR_0.rgb = baked ambient occlusion (multiply). On lod2 (single material) COLOR_0.a is a paint mask: albedo = mix(COLOR_0.rgb, paint * COLOR_0.rgb, COLOR_0.a); keep that material opaque.",
+  "paint2": "secondary paint (two-tone roof, spare cover); COLOR_0 = AO",
+  "glass": "tinted transparent glass, no COLOR_0; single-sided facing out - render it double-sided (the cockpit camera looks at it from inside)",
+  "chrome": "bright metal; COLOR_0 = AO",
+  "rubber": "tyres; COLOR_0 = AO",
+  "trim": "base colour WHITE, albedo comes from COLOR_0 (dark plastic, panel gaps, plates, reflectors; on lod1 / wheel_lod1 it carries glass, lamps, tyres and rims too)",
+  "light_head": "head lamp lens (emissive when on)",
+  "light_tail": "tail lamp lens (emissive, brighter when braking)",
+  "interior": "base colour WHITE, albedo comes from COLOR_0"
+ },
+ "uv": {
+  "set": "TEXCOORD_0 on body, bumper_f, bumper_r, lod1, lod2 (side projection for liveries, both sides share it)",
+  "u": "0.5 + forward / 5.4",
+  "v_gltf": "1 - up / 2.7",
+  "span": 5.4
+ },
+ "cars": {
+  "v04": {
+   "file": "cars/v04.glb",
+   "name": "山魈 岩羊",
+   "brand": "mandrill",
+   "class": "offroad",
+   "defaultPaint": "#E8B84A",
+   "bytes": 605472,
+   "dims": {
+    "length": 3.85,
+    "width": 1.8,
+    "height": 1.86,
+    "wheelbase": 2.42,
+    "trackFront": 1.56,
+    "trackRear": 1.56,
+    "groundClearance": 0.27
+   },
+   "measured": {
+    "length": 3.8499,
+    "width": 1.8001,
+    "height": 1.8598,
+    "note": "built mesh without mirrors; width includes the tyres"
+   },
+   "bbox": {
+    "min": [
+     -1.0248,
+     0.0,
+     -2.02
+    ],
+    "max": [
+     1.0248,
+     1.8598,
+     1.8299
+    ],
+    "note": "LOD0 body parts incl. mirrors, wheels excluded; min.y forced to ground"
+   },
+   "wheels": {
+    "fl": [
+     0.78,
+     0.4,
+     1.21
+    ],
+    "fr": [
+     -0.78,
+     0.4,
+     1.21
+    ],
+    "rl": [
+     0.78,
+     0.4,
+     -1.21
+    ],
+    "rr": [
+     -0.78,
+     0.4,
+     -1.21
+    ]
+   },
+   "tire": {
+    "radius": 0.4,
+    "widthFront": 0.235,
+    "widthRear": 0.235,
+    "rimRadius": 0.235,
+    "note": "node `wheel` is modelled at widthFront; scale X by widthRear/widthFront on the rear axle; outer face is +X, rotate 180deg about Y for the right side"
+   },
+   "triangles": {
+    "lod0": 14564,
+    "lod1": 3000,
+    "lod2": 799,
+    "parts": {
+     "body": 6460,
+     "glass": 352,
+     "bumper_f": 678,
+     "bumper_r": 554,
+     "lights_head": 168,
+     "lights_tail": 144,
+     "interior": 2408,
+     "steering_wheel": 392,
+     "wheel": 852,
+     "wheel_lod1": 160,
+     "lod1": 2360,
+     "lod2": 799
+    }
+   },
+   "nodes": {
+    "lod0": [
+     "body",
+     "glass",
+     "bumper_f",
+     "bumper_r",
+     "lights_head",
+     "lights_tail",
+     "interior",
+     "steering_wheel",
+     "wheel"
+    ],
+    "lod1": [
+     "lod1",
+     "wheel_lod1"
+    ],
+    "lod2": [
+     "lod2"
+    ],
+    "detachable": [
+     "bumper_f",
+     "bumper_r"
+    ],
+    "hardpoints": [
+     "hp_driver",
+     "hp_exhaust_l",
+     "hp_exhaust_r",
+     "hp_light_head_l",
+     "hp_light_head_r",
+     "hp_light_tail_l",
+     "hp_light_tail_r",
+     "hp_spare",
+     "hp_wheel_fl",
+     "hp_wheel_fr",
+     "hp_wheel_rl",
+     "hp_wheel_rr"
+    ]
+   },
+   "materials": {
+    "body": [
+     "paint",
+     "paint2",
+     "chrome",
+     "rubber",
+     "trim"
+    ],
+    "glass": [
+     "glass"
+    ],
+    "bumper_f": [
+     "trim",
+     "light_head"
+    ],
+    "bumper_r": [
+     "trim"
+    ],
+    "lights_head": [
+     "chrome",
+     "light_head"
+    ],
+    "lights_tail": [
+     "trim",
+     "light_tail"
+    ],
+    "interior": [
+     "interior"
+    ],
+    "steering_wheel": [
+     "chrome",
+     "interior"
+    ],
+    "wheel": [
+     "chrome",
+     "rubber",
+     "trim"
+    ],
+    "wheel_lod1": [
+     "trim"
+    ],
+    "lod1": [
+     "paint",
+     "trim"
+    ],
+    "lod2": [
+     "paint"
+    ]
+   },
+   "hardpoints": {
+    "hp_driver": [
+     0.36,
+     0.72,
+     -0.1463
+    ],
+    "hp_exhaust_l": [
+     0.56,
+     0.345,
+     -1.6616
+    ],
+    "hp_exhaust_r": [
+     0.56,
+     0.345,
+     -1.6616
+    ],
+    "hp_light_head_l": [
+     0.5804,
+     0.93,
+     1.8097
+    ],
+    "hp_light_head_r": [
+     -0.5804,
+     0.93,
+     1.8097
+    ],
+    "hp_light_tail_l": [
+     0.6901,
+     0.94,
+     -1.7622
+    ],
+    "hp_light_tail_r": [
+     -0.6901,
+     0.94,
+     -1.7622
+    ],
+    "hp_spare": [
+     0.0,
+     0.934,
+     -1.897
+    ],
+    "hp_wheel_fl": [
+     0.78,
+     0.4,
+     1.21
+    ],
+    "hp_wheel_fr": [
+     -0.78,
+     0.4,
+     1.21
+    ],
+    "hp_wheel_rl": [
+     0.78,
+     0.4,
+     -1.21
+    ],
+    "hp_wheel_rr": [
+     -0.78,
+     0.4,
+     -1.21
+    ]
+   },
+   "steering": {
+    "node": "steering_wheel",
+    "axisLocal": [
+     0,
+     1,
+     0
+    ],
+    "center": [
+     0.36,
+     1.08,
+     0.2537
+    ],
+    "axisCar": [
+     0.0,
+     0.4067,
+     -0.9135
+    ],
+    "radius": 0.18
+   },
+   "driver": {
+    "hardpoint": "hp_driver",
+    "side": "left"
+   }
+  },
+  "v07": {
+   "file": "cars/v07.glb",
+   "name": "岚驰 信风",
+   "brand": "lanchi",
+   "class": "hatch",
+   "defaultPaint": "#5FD6B4",
+   "bytes": 563824,
+   "dims": {
+    "length": 4.05,
+    "width": 1.76,
+    "height": 1.46,
+    "wheelbase": 2.58,
+    "trackFront": 1.52,
+    "trackRear": 1.52,
+    "groundClearance": 0.16
+   },
+   "measured": {
+    "length": 4.05,
+    "width": 1.7601,
+    "height": 1.46,
+    "note": "built mesh without mirrors; width includes the tyres"
+   },
+   "bbox": {
+    "min": [
+     -0.9972,
+     0.0,
+     -1.93
+    ],
+    "max": [
+     0.9972,
+     1.46,
+     2.12
+    ],
+    "note": "LOD0 body parts incl. mirrors, wheels excluded; min.y forced to ground"
+   },
+   "wheels": {
+    "fl": [
+     0.76,
+     0.31,
+     1.29
+    ],
+    "fr": [
+     -0.76,
+     0.31,
+     1.29
+    ],
+    "rl": [
+     0.76,
+     0.31,
+     -1.29
+    ],
+    "rr": [
+     -0.76,
+     0.31,
+     -1.29
+    ]
+   },
+   "tire": {
+    "radius": 0.31,
+    "widthFront": 0.205,
+    "widthRear": 0.205,
+    "rimRadius": 0.215,
+    "note": "node `wheel` is modelled at widthFront; scale X by widthRear/widthFront on the rear axle; outer face is +X, rotate 180deg about Y for the right side"
+   },
+   "triangles": {
+    "lod0": 14456,
+    "lod1": 3000,
+    "lod2": 798,
+    "parts": {
+     "body": 6094,
+     "glass": 480,
+     "bumper_f": 814,
+     "bumper_r": 442,
+     "lights_head": 176,
+     "lights_tail": 176,
+     "interior": 2642,
+     "steering_wheel": 392,
+     "wheel": 810,
+     "wheel_lod1": 160,
+     "lod1": 2360,
+     "lod2": 798
+    }
+   },
+   "nodes": {
+    "lod0": [
+     "body",
+     "glass",
+     "bumper_f",
+     "bumper_r",
+     "lights_head",
+     "lights_tail",
+     "interior",
+     "steering_wheel",
+     "wheel"
+    ],
+    "lod1": [
+     "lod1",
+     "wheel_lod1"
+    ],
+    "lod2": [
+     "lod2"
+    ],
+    "detachable": [
+     "bumper_f",
+     "bumper_r"
+    ],
+    "hardpoints": [
+     "hp_driver",
+     "hp_exhaust_l",
+     "hp_exhaust_r",
+     "hp_light_head_l",
+     "hp_light_head_r",
+     "hp_light_tail_l",
+     "hp_light_tail_r",
+     "hp_wheel_fl",
+     "hp_wheel_fr",
+     "hp_wheel_rl",
+     "hp_wheel_rr"
+    ]
+   },
+   "materials": {
+    "body": [
+     "paint",
+     "chrome",
+     "trim"
+    ],
+    "glass": [
+     "glass"
+    ],
+    "bumper_f": [
+     "paint",
+     "trim",
+     "light_head"
+    ],
+    "bumper_r": [
+     "paint"
+    ],
+    "lights_head": [
+     "trim",
+     "light_head"
+    ],
+    "lights_tail": [
+     "trim",
+     "light_tail"
+    ],
+    "interior": [
+     "interior"
+    ],
+    "steering_wheel": [
+     "chrome",
+     "interior"
+    ],
+    "wheel": [
+     "chrome",
+     "rubber",
+     "trim"
+    ],
+    "wheel_lod1": [
+     "trim"
+    ],
+    "lod1": [
+     "paint",
+     "trim"
+    ],
+    "lod2": [
+     "paint"
+    ]
+   },
+   "hardpoints": {
+    "hp_driver": [
+     0.36,
+     0.52,
+     -0.008
+    ],
+    "hp_exhaust_l": [
+     0.45,
+     0.235,
+     -1.8223
+    ],
+    "hp_exhaust_r": [
+     0.45,
+     0.235,
+     -1.8223
+    ],
+    "hp_light_head_l": [
+     0.488,
+     0.6175,
+     2.0004
+    ],
+    "hp_light_head_r": [
+     -0.488,
+     0.6175,
+     2.0004
+    ],
+    "hp_light_tail_l": [
+     0.4799,
+     0.8327,
+     -1.8958
+    ],
+    "hp_light_tail_r": [
+     -0.4799,
+     0.8327,
+     -1.8958
+    ],
+    "hp_wheel_fl": [
+     0.76,
+     0.31,
+     1.29
+    ],
+    "hp_wheel_fr": [
+     -0.76,
+     0.31,
+     1.29
+    ],
+    "hp_wheel_rl": [
+     0.76,
+     0.31,
+     -1.29
+    ],
+    "hp_wheel_rr": [
+     -0.76,
+     0.31,
+     -1.29
+    ]
+   },
+   "steering": {
+    "node": "steering_wheel",
+    "axisLocal": [
+     0,
+     1,
+     0
+    ],
+    "center": [
+     0.36,
+     0.88,
+     0.392
+    ],
+    "axisCar": [
+     0.0,
+     0.4067,
+     -0.9135
+    ],
+    "radius": 0.18
+   },
+   "driver": {
+    "hardpoint": "hp_driver",
+    "side": "left"
+   }
+  },
+  "v22": {
+   "file": "cars/v22.glb",
+   "name": "铁砧 雷锤",
+   "brand": "anvil",
+   "class": "muscle",
+   "defaultPaint": "#FF5A4E",
+   "bytes": 584944,
+   "dims": {
+    "length": 4.9,
+    "width": 1.94,
+    "height": 1.36,
+    "wheelbase": 2.88,
+    "trackFront": 1.62,
+    "trackRear": 1.62,
+    "groundClearance": 0.13
+   },
+   "measured": {
+    "length": 4.8997,
+    "width": 1.9391,
+    "height": 1.36,
+    "note": "built mesh without mirrors; width includes the tyres"
+   },
+   "bbox": {
+    "min": [
+     -1.0467,
+     0.0,
+     -2.51
+    ],
+    "max": [
+     1.0467,
+     1.36,
+     2.3897
+    ],
+    "note": "LOD0 body parts incl. mirrors, wheels excluded; min.y forced to ground"
+   },
+   "wheels": {
+    "fl": [
+     0.81,
+     0.35,
+     1.44
+    ],
+    "fr": [
+     -0.81,
+     0.35,
+     1.44
+    ],
+    "rl": [
+     0.81,
+     0.35,
+     -1.44
+    ],
+    "rr": [
+     -0.81,
+     0.35,
+     -1.44
+    ]
+   },
+   "tire": {
+    "radius": 0.35,
+    "widthFront": 0.265,
+    "widthRear": 0.315,
+    "rimRadius": 0.25,
+    "note": "node `wheel` is modelled at widthFront; scale X by widthRear/widthFront on the rear axle; outer face is +X, rotate 180deg about Y for the right side"
+   },
+   "triangles": {
+    "lod0": 14698,
+    "lod1": 3000,
+    "lod2": 799,
+    "parts": {
+     "body": 6500,
+     "glass": 480,
+     "bumper_f": 736,
+     "bumper_r": 872,
+     "lights_head": 112,
+     "lights_tail": 96,
+     "interior": 2150,
+     "steering_wheel": 392,
+     "wheel": 840,
+     "wheel_lod1": 160,
+     "lod1": 2360,
+     "lod2": 799
+    }
+   },
+   "nodes": {
+    "lod0": [
+     "body",
+     "glass",
+     "bumper_f",
+     "bumper_r",
+     "lights_head",
+     "lights_tail",
+     "interior",
+     "steering_wheel",
+     "wheel"
+    ],
+    "lod1": [
+     "lod1",
+     "wheel_lod1"
+    ],
+    "lod2": [
+     "lod2"
+    ],
+    "detachable": [
+     "bumper_f",
+     "bumper_r"
+    ],
+    "hardpoints": [
+     "hp_driver",
+     "hp_exhaust_l",
+     "hp_exhaust_r",
+     "hp_light_head_l",
+     "hp_light_head_r",
+     "hp_light_tail_l",
+     "hp_light_tail_r",
+     "hp_wheel_fl",
+     "hp_wheel_fr",
+     "hp_wheel_rl",
+     "hp_wheel_rr"
+    ]
+   },
+   "materials": {
+    "body": [
+     "paint",
+     "chrome",
+     "trim"
+    ],
+    "glass": [
+     "glass"
+    ],
+    "bumper_f": [
+     "paint",
+     "trim"
+    ],
+    "bumper_r": [
+     "paint",
+     "trim"
+    ],
+    "lights_head": [
+     "light_head"
+    ],
+    "lights_tail": [
+     "light_tail"
+    ],
+    "interior": [
+     "interior"
+    ],
+    "steering_wheel": [
+     "chrome",
+     "interior"
+    ],
+    "wheel": [
+     "chrome",
+     "rubber",
+     "trim"
+    ],
+    "wheel_lod1": [
+     "trim"
+    ],
+    "lod1": [
+     "paint",
+     "trim"
+    ],
+    "lod2": [
+     "paint"
+    ]
+   },
+   "hardpoints": {
+    "hp_driver": [
+     0.36,
+     0.41,
+     -0.4455
+    ],
+    "hp_exhaust_l": [
+     0.56,
+     0.205,
+     -2.2647
+    ],
+    "hp_exhaust_r": [
+     -0.56,
+     0.205,
+     -2.2647
+    ],
+    "hp_light_head_l": [
+     0.6406,
+     0.6802,
+     2.364
+    ],
+    "hp_light_head_r": [
+     -0.6406,
+     0.6802,
+     2.364
+    ],
+    "hp_light_tail_l": [
+     0.5868,
+     0.8439,
+     -2.475
+    ],
+    "hp_light_tail_r": [
+     -0.5868,
+     0.8439,
+     -2.475
+    ],
+    "hp_wheel_fl": [
+     0.81,
+     0.35,
+     1.44
+    ],
+    "hp_wheel_fr": [
+     -0.81,
+     0.35,
+     1.44
+    ],
+    "hp_wheel_rl": [
+     0.81,
+     0.35,
+     -1.44
+    ],
+    "hp_wheel_rr": [
+     -0.81,
+     0.35,
+     -1.44
+    ]
+   },
+   "steering": {
+    "node": "steering_wheel",
+    "axisLocal": [
+     0,
+     1,
+     0
+    ],
+    "center": [
+     0.36,
+     0.77,
+     -0.0455
+    ],
+    "axisCar": [
+     0.0,
+     0.4067,
+     -0.9135
+    ],
+    "radius": 0.18
+   },
+   "driver": {
+    "hardpoint": "hp_driver",
+    "side": "left"
+   }
+  }
+ },
+ "driver": {
+  "file": "driver.glb",
+  "bytes": 42140,
+  "triangles": 964,
+  "parts": {
+   "arm_l_fore": 88,
+   "arm_l_upper": 44,
+   "arm_r_fore": 88,
+   "arm_r_upper": 44,
+   "driver_body": 572,
+   "driver_head": 128
+  },
+  "origin": "hip point; place the `driver` root at a car's hp_driver (no rotation needed)",
+  "nodes": {
+   "root": "driver",
+   "body": "driver_body",
+   "head": "driver_head",
+   "arms": {
+    "left": [
+     "arm_l_upper",
+     "arm_l_fore"
+    ],
+    "right": [
+     "arm_r_upper",
+     "arm_r_fore"
+    ]
+   }
+  },
+  "materials": {
+   "driver_suit": "base colour WHITE, albedo = COLOR_0 (suit, gloves, boots, harness)",
+   "driver_helmet": "helmet shell, tint per driver",
+   "driver_visor": "dark glossy visor"
+  },
+  "animation": {
+   "clip": "steer",
+   "mapping": "normalized time = 0.5 + wheelAngle / (2 * rangeDeg); wheelAngle > 0 turns left (counter-clockwise seen from the seat, positive rotation about the steering node's +Y)",
+   "rangeDeg": 90.0,
+   "frames": 17,
+   "duration": 1.0
+  },
+  "ik": {
+   "note": "for custom IK: shoulders / segment lengths in driver space (glTF axes)",
+   "shoulderLeft": [
+    0.205,
+    0.477,
+    -0.1652
+   ],
+   "shoulderRight": [
+    -0.205,
+    0.477,
+    -0.1652
+   ],
+   "upperArm": 0.3,
+   "foreArm": 0.3,
+   "segmentAxisLocal": [
+    0,
+    -1,
+    0
+   ]
+  },
+  "steeringWheel": {
+   "centerFromHip": [
+    0.0,
+    0.36,
+    0.4
+   ],
+   "axis": [
+    0.0,
+    0.4067,
+    -0.9135
+   ],
+   "radius": 0.18
+  },
+  "helmetTopAboveHip": 0.842
+ }
+}

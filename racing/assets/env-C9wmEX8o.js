@@ -1,0 +1,1 @@
+var e={clear:`晴`,cloudy:`多云`,lightRain:`小雨`,heavyRain:`暴雨`,fog:`雾`,dust:`沙尘`,snow:`雪`},t=2880;function n(e,n,r){let i=((n-e)%24+24)%24;return r>0?i*t/(24*r):1}export{e as n,n as r,t};
